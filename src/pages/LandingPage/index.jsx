@@ -40,8 +40,15 @@ import bg1 from '../../assets/Images/bg1.png'
 import BlogCard from "../../Components/Cards/BlogCard";
 import StoriesSingleCard from "../../Components/Cards/StoriesSingleCard";
 import llll from '../../assets/Images/Mask group copy.png'
+
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
 import 'swiper/css';
+// Import required modules
+import { Autoplay } from 'swiper/modules';
+
 
 
 
@@ -187,11 +194,44 @@ function LandingPage() {
                     </div>
                     <div className="pt-[22px] ">
                         <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[32px] md:text-[42px] max-w-[660px] mx-auto ">Affiliation</h2>
-                        <div className="flex items-center gap-[14px] md:gap-[18px] justify-center py-[42px] flex-wrap px-[12px] ">
-                            <ReviewCard/>
-                            <ReviewCard/>
-                            <ReviewCard/>
-                        </div>
+                            <div className=" w-full flex items-center overflow-auto py-[22px] gap-[14px] md:gap-[18px] mt-[15px]">
+                                <Swiper
+                                    slidesPerView={7}
+                                    breakpoints={{
+                                        
+                                        100: {
+                                        slidesPerView: 7,
+                                        
+                                        },
+                                        1024: {
+                                        slidesPerView: 8,
+                                        
+                                        },
+                                        1440: {
+                                        slidesPerView: 9,
+                                        
+                                        },
+                                    }}
+                                    spaceBetween={10}
+                                    centeredSlides={true}
+                                    autoplay={{
+                                    delay: 1900,
+                                    disableOnInteraction: false,
+                                    }}
+                                    loop={true}
+                                    modules={[ Autoplay]}
+                                    className="mySwiper w-full"
+                                >
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                    <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
+                                </Swiper>
+                            </div>
                         <div className="flex items-center justify-center gap-[8px] ">
                             <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                                 <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,13 +251,13 @@ function LandingPage() {
                 </div>
             </div>
             <div className="w-full bg-[#E8F0FA] ">
-                <div className="max-w-[1200px] mx-auto py-[62px] px-[12px] md:px-[20px] ">
+                <div className="max-w-[1200px] mx-auto py-[62px] px-[16px] md:px-[20px] ">
                     <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[32px] md:text-[42px] ">Achievements and Success Stories</h2>
                     <p className=" text-[15px] text-[#0A0E19] text-center mt-[12px] ">Our projects showcase our dedication to excellence and product delivery, featuring innovative and impactful solutions.</p>
                     <div className="py-[22px] ">
-                        <StoriesSingleCard color = '#eae1ca' image = {llll} title = 'N Style' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
-                        <StoriesSingleCard color = '#d0efe5' image = {projectCardImage2} title = 'Concierge Bookings' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' row_reverse = "row-reverse" />
-                        <StoriesSingleCard color = '#b1d1f3' image = {projectCardImage4} title = 'OneMove' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <StoriesSingleCard number = '1' color = '#eae1ca' image = {projectCardImage1} title = 'N Style' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <StoriesSingleCard number = '2' color = '#d0efe5' image = {projectCardImage2} title = 'Concierge Bookings' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' row_reverse />
+                        <StoriesSingleCard number = '3' lastElement color = '#b1d1f3' image = {projectCardImage4} title = 'OneMove' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
                     </div>
                     <div className="flex items-center justify-center mt-[52px]  ">
                         <div className="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
@@ -232,27 +272,48 @@ function LandingPage() {
             <div className="w-full bg-[#fff]  " >
                 <div className="max-w-[1200px] mx-auto py-[32px] px-[12px] md:px-[20px] ">
                     <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[32px] md:text-[42px] ">Unlocking Business Potential Through Our Expertise</h2>
-                    <div className="w-full flex items-center justify-center px-[8px]  ">
-                        <div className="flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
-                            <Swiper className="!max-w-max "
-                                spaceBetween={12}
-                                slidesPerView={1}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
-                                >
-                                <SwiperSlide className="max-w-max "><ServiceSmallCard heading = 'Data Analytics' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'UI/UX' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Artificial Intelligence' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Machine Learning' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Web' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
+                        <div className=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
+                            <Swiper
+                                slidesPerView={7}
+                                breakpoints={{
+                                    
+                                    100: {
+                                      slidesPerView: 7,
+                                      
+                                    },
+                                    1024: {
+                                      slidesPerView: 8,
+                                      
+                                    },
+                                    1440: {
+                                      slidesPerView: 9,
+                                      
+                                    },
+                                  }}
+                                spaceBetween={10}
+                                centeredSlides={true}
+                                autoplay={{
+                                delay: 1900,
+                                disableOnInteraction: false,
+                                }}
+                                loop={true}
+                                modules={[ Autoplay]}
+                                className="mySwiper w-full"
+                            >
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Data Analytics' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'UI/UX' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Artificial Intelligence' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Machine Learning' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Web' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Data Analytics' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'UI/UX' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Artificial Intelligence' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Machine Learning' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Web' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
                             </Swiper>
                         </div>
-                    </div>
                     <div className="flex items-center justify-center gap-[22px] max-w-[840px] mx-auto mt-[22px] flex-col md:flex-row">
                         <div className="max-w-[420px] w-full h-[250px] sm:h-[270px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage})`}}  ></div>
                         <div className="flex-1 ">
@@ -272,27 +333,48 @@ function LandingPage() {
                         </div>
                     </div>
                     <h2 className="text-center text-[#0A0E19] font-[600] mt-[32px] leading-[50px] text-[42px] ">Technology</h2>
-                    <div className="w-full flex items-center justify-center px-[8px]  ">
-                    <div className="flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
-                            <Swiper className="!max-w-max "
-                                spaceBetween={12}
-                                slidesPerView={1}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
-                                >
-                                <SwiperSlide className="max-w-max "><ServiceSmallCard heading = 'Data Analytics' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'UI/UX' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Artificial Intelligence' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Machine Learning' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Web' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
-                                <SwiperSlide className="max-w-max " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
+                    <div className=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
+                            <Swiper
+                                slidesPerView={7}
+                                breakpoints={{
+                                    
+                                    100: {
+                                      slidesPerView: 7,
+                                      
+                                    },
+                                    1024: {
+                                      slidesPerView: 8,
+                                      
+                                    },
+                                    1440: {
+                                      slidesPerView: 9,
+                                      
+                                    },
+                                  }}
+                                spaceBetween={10}
+                                centeredSlides={true}
+                                autoplay={{
+                                delay: 1900,
+                                disableOnInteraction: false,
+                                }}
+                                loop={true}
+                                modules={[ Autoplay]}
+                                className="mySwiper w-full"
+                            >
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Data Analytics' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'UI/UX' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Artificial Intelligence' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Machine Learning' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Web' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Data Analytics' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'UI/UX' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Artificial Intelligence' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Machine Learning' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Web' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
                             </Swiper>
                         </div>
-                    </div>
                     <div className="mt-[22px] flex items-center justify-center flex-wrap gap-[12px] ">
                         <img className="h-[56px] w-[110px] " src={img1} alt="" />
                         <img className="h-[56px] w-[110px] " src={img2} alt="" />
@@ -407,6 +489,8 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
+
+
         </>
     );
   }

@@ -16,3 +16,15 @@
         flex-direction: column;
     }
 }
+
+
+.stories__after ::after{
+height: 100%;
+width: 1px;
+background-color: #8AAAD2;
+content: '';
+position: absolute;
+top: 56%;
+left: 50%;
+transform: translateX(50%);
+} 

@@ -5,9 +5,12 @@
 function StoriesSingleCard(props) {
     return (
         <>
-            <div className="flex items-center justify-center gap-[12px] md:gap-[52px] max-w-[900px] mx-auto md:flex-row flex-col mt-[12px] " >
+            <div className={`flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  ${props.row_reverse ? 'md:flex-row-reverse' : 'md:flex-row' }`}  >
                 <div className="mt-[22px]  rounded-[12px] pt-[20px] overflow-hidden max-w-[420px] w-full " style={{backgroundColor : props.color , paddingLeft : props.paddingLeft , paddingRight : props.paddingRight}}  >
-                    <img className='h-[240px] sm:h-[260px]' src= {props.image} alt="" />
+                    <img className='h-[240px] sm:h-[255px]' src= {props.image} alt="" />
+                </div>
+                <div className="md:block hidden">
+                    <div className={`text-2xl text-white rounded-full min-w-10 min-h-10 bg-[#8AAAD2] flex items-center justify-center ${!props.lastElement ? "stories__after" : ""}`}><span>{props.number}</span></div>
                 </div>
                 <div className="mt-[22px] max-w-[420px] w-full ">
                     <h2 className="text-[22px] text-[#0A0E19] font-[600] line-clamp-1 ">{props.title}</h2>
@@ -23,7 +26,6 @@ function StoriesSingleCard(props) {
         </>
     );
   }
-  
-//   style={{flexDirection : props.row_reverse}}
+
 
   export default StoriesSingleCard;
