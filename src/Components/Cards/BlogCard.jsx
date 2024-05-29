@@ -5,7 +5,7 @@ import backgroundImage from '../../assets/Images/Ellipse 2363.png'
 function BlogCard(props) {
     return (
         <>
-            <div className="mr-[12px] w-[440px] ">
+            <div className="mr-[12px] w-[380px] sm:w-[440px] ">
                 <div className="w-full h-[260px] bg-cover bg-no-repeat bg-center rounded-[20px] " style={{backgroundImage : `url(${props.bg})`}}  ></div>
                 <div className="flex items-center mt-[12px] justify-between ">
                     <div className='text-[#0D99FF] text-[11px] font-[500] bg-[#DDF0FF] rounded-[30px] px-[11px] py-[4px] '>
