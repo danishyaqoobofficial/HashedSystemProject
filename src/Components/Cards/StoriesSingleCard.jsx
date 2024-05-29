@@ -5,7 +5,7 @@
 function StoriesSingleCard(props) {
     return (
         <>
-            <div className="flex items-center justify-center md:gap-[52px] max-w-[900px] mx-auto md:flex-row flex-col " style={{flexDirection : props.row_reverse}} >
+            <div className="flex items-center justify-center gap-[12px] md:gap-[52px] max-w-[900px] mx-auto md:flex-row flex-col " style={{flexDirection : props.row_reverse}} >
                 <div className="mt-[22px]  rounded-[12px] pt-[20px] overflow-hidden max-w-[420px] w-full " style={{backgroundColor : props.color , paddingLeft : props.paddingLeft , paddingRight : props.paddingRight}}  >
                     <img className='h-[240px] sm:h-[260px]' src= {props.image} alt="" />
                 </div>
