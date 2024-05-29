@@ -40,6 +40,8 @@ import bg1 from '../../assets/Images/bg1.png'
 import BlogCard from "../../Components/Cards/BlogCard";
 import StoriesSingleCard from "../../Components/Cards/StoriesSingleCard";
 import llll from '../../assets/Images/Mask group copy.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 
 
@@ -232,12 +234,19 @@ function LandingPage() {
                     <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[32px] md:text-[42px] ">Unlocking Business Potential Through Our Expertise</h2>
                     <div className="w-full flex items-center justify-center px-[8px]  ">
                         <div className="flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
-                            <ServiceSmallCard heading = 'Data Analytics' />
-                            <ServiceSmallCard heading = 'UI/UX' />
-                            <ServiceSmallCard heading = 'Artificial Intelligence' />
-                            <ServiceSmallCard heading = 'Machine Learning' />
-                            <ServiceSmallCard heading = 'Web' />
-                            <ServiceSmallCard heading = 'Mobile' />
+                            <Swiper
+                                spaceBetween={12}
+                                slidesPerView={3}
+                                onSlideChange={() => console.log('slide change')}
+                                onSwiper={(swiper) => console.log(swiper)}
+                                >
+                                <SwiperSlide><ServiceSmallCard heading = 'Data Analytics' /></SwiperSlide>
+                                <SwiperSlide><ServiceSmallCard heading = 'UI/UX' /></SwiperSlide>
+                                <SwiperSlide><ServiceSmallCard heading = 'Artificial Intelligence' /></SwiperSlide>
+                                <SwiperSlide><ServiceSmallCard heading = 'Machine Learning' /></SwiperSlide>
+                                <SwiperSlide><ServiceSmallCard heading = 'Web' /></SwiperSlide>
+                                <SwiperSlide><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
+                            </Swiper>
                         </div>
                     </div>
                     <div className="flex items-center justify-center gap-[22px] max-w-[840px] mx-auto mt-[22px] flex-col md:flex-row">
