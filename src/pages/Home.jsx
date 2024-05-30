@@ -54,7 +54,7 @@ function LandingPage() {
     return (
         <>
             <main className="bg-[#E8F0FA] w-full ">
-                <section className="max-w-[1200px] mx-auto pt-[30px] md:pt-[60px] xl:pt-[80px] flex gap-[18px] md:gap-[22px] px-[12px] sm:px-[20px] lg:flex-row flex-col ">
+                <section className="max-w-[1200px] mx-auto pt-[30px] md:pt-[60px] xl:pt-[80px] flex gap-[18px] md:gap-[22px] px-[15px] sm:px-[20px] lg:flex-row flex-col ">
                     <div className="flex-1 pt-[32px] ">
                         <h2 className="text-[34px] sm:text-[42px] md:text-[60px] text-[#001436] font-[600] text-start leading-[50px] md:leading-[70px] line-clamp-3 ">Software Development & IT Company</h2>
                         <p className="text-[#0D99FF] text-[24px] sm:text-[28px] md:text-[32px] mt-[14px] font-[600] text-start line-clamp-1 ">in Dubai - Hashed System</p>
@@ -123,7 +123,7 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#E8F0FA] py-[44px] w-full px-[12px] ">
+            <div className="bg-[#E8F0FA] py-[44px] w-full px-[15px] sm:px-[12px] ">
                 <div className="max-w-[1200px] mx-auto ">
                     <h2 className=" text-center text-[26px] sm:text-[30px] md:text-[42px] text-[#0A0E19] font-[600] ">Our Services</h2>
                     <div className="mt-[22px] bg-[#0D99FF] rounded-[20px] p-[30px] flex gap-[42px] items-center flex-col-reverse sm:flex-row ">
@@ -165,7 +165,7 @@ function LandingPage() {
             </div>
             <div className="bg-[#fff] w-full ">
                 <div className="max-w-[1200px] mx-auto">
-                    <div className=" py-[52px] px-[8px] sm:px-[12px] ">
+                    <div className=" py-[52px] px-[15px] sm:px-[20px] ">
                         <div className="flex items-center justify-center ">
                             <div className="rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[6px] px-[9px] ">
                                 <span className="bg-[#0D99FF] rounded-[50px] h-[7px] w-[7px] ">
@@ -192,9 +192,9 @@ function LandingPage() {
                     </div>
                     <div className="pt-[22px] ">
                         <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] max-w-[660px] mx-auto ">Affiliation</h2>
-                            <div className=" w-full flex items-center overflow-auto py-[22px] gap-[14px] md:gap-[18px] mt-[15px]">
+                            <div className=" w-full flex items-center overflow-auto py-[22px] gap-[14px] md:gap-[18px] mt-[15px] justify-center ">
                                 <Swiper
-                                    slidesPerView={7}
+                                    slidesPerView={1}
                                     navigation={{
                                         nextEl: '.swiper-button-next-affiliation',
                                         prevEl: '.swiper-button-prev-affiliation',
@@ -202,15 +202,22 @@ function LandingPage() {
                                     breakpoints={{
                                         
                                         100: {
-                                        slidesPerView: 7,
+                                        slidesPerView: 1,
                                         
                                         },
+                                        320: {
+                                            slidesPerView: 1,
+                                        },
+                                        600: {
+                                            slidesPerView: 4,
+                                            
+                                        },
                                         1024: {
-                                        slidesPerView: 8,
+                                        slidesPerView: 5,
                                         
                                         },
                                         1440: {
-                                        slidesPerView: 9,
+                                        slidesPerView: 6,
                                         
                                         },
                                     }}
@@ -255,7 +262,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="w-full bg-[#E8F0FA] ">
-                <div className="max-w-[1200px] mx-auto py-[62px] px-[16px] md:px-[20px] ">
+                <div className="max-w-[1200px] mx-auto py-[62px] px-[15px] md:px-[20px] ">
                     <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Achievements and Success Stories</h2>
                     <p className=" text-[15px] text-[#0A0E19] text-center mt-[12px] ">Our projects showcase our dedication to excellence and product delivery, featuring innovative and impactful solutions.</p>
                     <div className="py-[22px] ">
@@ -274,7 +281,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="w-full bg-[#fff]  " >
-                <div className="max-w-[1200px] mx-auto py-[32px] px-[12px] md:px-[20px] ">
+                <div className="max-w-[1200px] mx-auto py-[32px] px-[15px] md:px-[20px] ">
                     <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Unlocking Business Potential Through Our Expertise</h2>
                         <div className=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
                             <Swiper
@@ -469,7 +476,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="w-full bg-[#E8F0FA] ">
-                <div className="max-w-[1100px] mx-auto py-[52px] px-[8px] sm:px-[12px] ">
+                <div className="max-w-[1100px] mx-auto py-[52px] px-[15px] sm:px-[20px] ">
                     <div className="flex items-center justify-center ">
                         <div className="rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[5px] px-[12px] ">
                             <span className="bg-[#0D99FF] rounded-[50px] h-[7px] w-[7px] ">
@@ -486,19 +493,20 @@ function LandingPage() {
                                 
                                 100: {
                                     slidesPerView: 1,
+                                    spaceBetween:10,
+                                    
+                                },
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween:30
                                     
                                 },
                                 1024: {
                                     slidesPerView: 2,
-                                    
-                                },
-                                1440: {
-                                    slidesPerView: 3,
+                                    spaceBetween:50
                                     
                                 },
                                 }}
-                            spaceBetween={10}
-                            centeredSlides={true}
                             autoplay={{
                             delay: 1900,
                             disableOnInteraction: false,
@@ -507,10 +515,10 @@ function LandingPage() {
                             modules={[ Autoplay]}
                             className="mySwiper w-full"
                         >
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                            <SwiperSlide className="" ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                            <SwiperSlide className=" " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                            <SwiperSlide className=" " ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                            <SwiperSlide className=" " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
                         </Swiper>
                         
                     </div>
@@ -529,7 +537,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="w-full bg-[#fff] ">
-                <div className="max-w-[1200px] mx-auto py-[50px] px-[12px] md:px-[20px] ">
+                <div className="max-w-[1200px] mx-auto py-[50px] px-[15px] md:px-[20px] ">
                     <h2 className=" text-center text-[#0A0E19] font-[600] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] max-w-[660px] mx-auto ">Have a project? Let's discuss</h2>
                     <p className=" text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this form, expect to hear back from us within 24 hours.</p>
                     <div className="flex items-center gap-[12px] mt-[26px] flex-col lg:flex-row ">

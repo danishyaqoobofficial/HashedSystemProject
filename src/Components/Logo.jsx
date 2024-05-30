@@ -7,7 +7,7 @@ function Logo() {
         <>
                 <Link to={`/`}>
                     <div className="flex items-center justify-center cursor-pointer ">
-                        <img className="h-[50px] " src={img} alt="123456" />
+                        <img className="h-[40px] sm:h-[50px] " src={img} alt="123456" />
                     </div>
                 </Link>
         </>

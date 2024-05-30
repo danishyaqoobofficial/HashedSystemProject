@@ -20,7 +20,7 @@ function Footer() {
         <>
             <footer className="w-full bg-[#11335A]  " >
                 <main className="max-w-[1200px] mx-auto ">
-                    <div className="py-[42px] px-[12px] ">
+                    <div className="py-[42px] px-[15px] sm:px-[20px] ">
                         <div className="flex items-center justify-between ">
                             
                             <img className="h-[50px] cursor-pointer " src={img} alt="" />

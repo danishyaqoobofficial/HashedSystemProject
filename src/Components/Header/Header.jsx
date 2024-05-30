@@ -13,7 +13,7 @@ function Header() {
     return (
         <>
             <header className=" bg-[#E8F0FA] w-full relative ">
-                <div className="flex items-center max-w-[1200px] mx-auto py-[11px] justify-between px-[12px] sm:px-[20px] ">
+                <div className="flex items-center max-w-[1200px] mx-auto py-[10px] sm:py-[11px] justify-between px-[15px] sm:px-[20px] ">
                     <Logo/>
                     <div className="hidden lg:block">
                         <div className="flex items-center gap-[28px] lg:gap-[44px] ">

@@ -37,13 +37,13 @@ function AboutUs() {
     return (
         <>
            <section className="w-full bg-[#062345] ">
-                <div className="max-w-[900px] w-[90%] md:w-full mx-auto py-[120px] px-[12px] md:px-[20px] ">
+                <div className="max-w-[900px] w-[90%] md:w-full mx-auto py-[120px] px-[15px] md:px-[20px] ">
                     <h2 className="text-[34px] sm:text-[42px] md:text-[55px] font-[600] text-[#fff] text-center ">About Us</h2>
                     <p className=" text-[14px] sm:text-[16px] md:text-[18px] text-[#fff] text-center font-[300] mt-[12px] ">Hashed System is a leading software development company in Dubai offering custom solutions. We aim to deliver innovative technology products that bring client satisfaction.</p>
                 </div>
            </section>
            <main className="bg-[#fff] w-full ">
-                <div className="max-w-[1200px] mx-auto py-[74px] px-[12px] md:px-[20px] ">
+                <div className="max-w-[1200px] mx-auto py-[74px] px-[15px] md:px-[20px] ">
                     <div className="max-w-[900px] mx-auto " >
                         <h3 className="text-[#0D99FF] text-[16px] md:text-[18px] text-center font-[400] ">How we define our culture</h3>
                         <p className="text-[20px] md:text-[22px] text-[#000000] text-center mt-[11px] font-[300] ">Our culture forms the bedrock of our organization, emphasizing lifelong learning and guided by our dedication to openness, inclusivity, and uncompromising integrity. This fuels our ability to develop innovative and comprehensive digital solutions for our clients, ensuring we remain agile in a constantly evolving landscape.</p>
@@ -69,7 +69,7 @@ function AboutUs() {
                 </div>
            </main>
            <div className="w-full bg-[#E8F0FA] ">
-                <div className=" max-w-[1200px] mx-auto py-[36px] px-[12px] md:px-[20px] ">
+                <div className=" max-w-[1200px] mx-auto py-[36px] px-[15px] md:px-[20px] ">
                     <h2 className="mt-[46px] text-center text-[#0A0E19] text-[26px] sm:text-[30px] md:text-[42px] font-[600] ">Our Vision</h2>
                     <div className="mt-[22px] flex items-center justify-center gap-[22px] flex-wrap ">
                         <div className="bg-[#fff] max-w-[285px] w-full flex flex-col items-center justify-center px-[40px] py-[32px] rounded-[20px] ">
@@ -91,14 +91,14 @@ function AboutUs() {
                 </div>
            </div>
            <div className='w-full bg-[#fff] '>
-                <div className='max-w-[1100px] mx-auto flex items-center py-[110px] px-[12px] md:px-[20px] lg:flex-row flex-col '>
-                    <div className='flex-1'>
+                <div className='max-w-[1100px] mx-auto flex items-center pt-[50px] lg:pt-[110px] pb-[110px] px-[15px] md:px-[20px] lg:flex-row flex-col '>
+                    <div className='flex-1 lg:pr-[120px] '>
                         <h2 className='text-[#001436] text-[26px] sm:text-[30px] md:text-[42px] font-[600] '>Leading the Digital Transformation in Industry </h2>
                         <p className=" text-[14px] text-[#0a0e19cd] mt-[11px] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
-                    <div className=' flex flex-1 items-center justify-end relative mt-[26px] lg:mt-[0px] '>
-                        <img className='h-[430px] ' src={banner1} alt="" />
-                        <img className='h-[400px] absolute right-[30%] top-[26%] ' src={banner2} alt="" />
+                    <div className=' flex sm:flex-1 items-center justify-end sm:max-w-max w-full relative mt-[26px] lg:mt-[0px] '>
+                        <img className='h-[340px] sm:h-[390px] md:h-[430px] ' src={banner1} alt="" />
+                        <img className='h-[300px] sm:h-[390px] md:h-[400px] absolute right-[24%] sm:right-[30%] top-[26%] ' src={banner2} alt="" />
                     </div>
                 </div>
            </div>
@@ -293,8 +293,8 @@ function AboutUs() {
                     </div>
                 </div>
            </div>
-           <div className="w-full bg-[#E8F0FA] py-[52px] ">
-                <div classame="max-w-[1100px] mx-auto px-[8px] sm:px-[12px] ">
+           <div className="w-full bg-[#E8F0FA] py-[52px] px-[15px] sm:px-[20px] ">
+                <div classame="max-w-[1100px] mx-auto px-[15px] sm:px-[20px] ">
                     <div className="flex items-center justify-center ">
                         <div className="rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[5px] px-[12px] ">
                             <span className="bg-[#0D99FF] rounded-[50px] h-[7px] w-[7px] ">
