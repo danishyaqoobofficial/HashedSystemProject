@@ -119,7 +119,7 @@ function AboutUs() {
                         </div>
                         <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                             <div className='flex items-center justify-between w-full '>
-                                <p className='text-[#0D99FF] text-[14px] '>01</p>
+                                <p className='text-[#0D99FF] text-[14px] '>02</p>
                                 <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
 
                                 </div>
@@ -129,7 +129,7 @@ function AboutUs() {
                         </div>
                         <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                             <div className='flex items-center justify-between w-full '>
-                                <p className='text-[#0D99FF] text-[14px] '>01</p>
+                                <p className='text-[#0D99FF] text-[14px] '>03</p>
                                 <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
 
                                 </div>
@@ -139,7 +139,7 @@ function AboutUs() {
                         </div>
                         <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                             <div className='flex items-center justify-between w-full '>
-                                <p className='text-[#0D99FF] text-[14px] '>01</p>
+                                <p className='text-[#0D99FF] text-[14px] '>04</p>
                                 <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
 
                                 </div>
@@ -149,7 +149,7 @@ function AboutUs() {
                         </div>
                         <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                             <div className='flex items-center justify-between w-full '>
-                                <p className='text-[#0D99FF] text-[14px] '>01</p>
+                                <p className='text-[#0D99FF] text-[14px] '>05</p>
                                 <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
 
                                 </div>
@@ -239,7 +239,7 @@ function AboutUs() {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[22px] flex items-center gap-[22px] md:flex-row flex-col '>
+                    <div className='mt-[90px] flex items-center gap-[22px] md:flex-row flex-col '>
                         <div className="flex flex-col gap-[22px] flex-1 ">
                             <div className="h-[270px] sm:h-[300px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage1})`}}  ></div>
                             <div className="flex-1 ">
@@ -262,7 +262,7 @@ function AboutUs() {
                             </div>
                         </div>
                     </div>
-                    <div className='mt-[70px] '>
+                    <div className='mt-[90px] '>
                         <div className="flex items-center justify-center gap-[22px] max-w-[800px] mt-[22px] flex-col md:flex-row">
                             <div className="max-w-[420px] w-full h-[230px] sm:h-[250px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage3})`}}  ></div>
                             <div className="flex-1 ">
