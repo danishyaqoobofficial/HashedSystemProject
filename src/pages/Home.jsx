@@ -1,55 +1,53 @@
-import PK from "../../Components/SVGs/PakLocation";
-import UK from "../../Components/SVGs/UKLocation";
-import RightArrow from "../../Components/SVGs/RightArrow";
-import UAE from "../../Components/SVGs/UAELocation";
-import img from '../../assets/Images/hero-image.png'
-import img1 from '../../assets/Images/1.png'
-import img2 from '../../assets/Images/2.png'
-import img3 from '../../assets/Images/3.png'
-import img4 from '../../assets/Images/4.png'
-import img5 from '../../assets/Images/5.png'
-import img6 from '../../assets/Images/6.png'
-import img7 from '../../assets/Images/7.png'
-import img8 from '../../assets/Images/image 82785 1.png'
-import ServiceSingleCard from "../../Components/Cards/ServiceSingleCard";
-import image1 from '../../assets/Images/image 82786.png'
-import image2 from '../../assets/Images/laravel-logo 1.png'
-import image3 from '../../assets/Images/product 1.png'
-import image4 from '../../assets/Images/image 82787.png'
-import ProjectSingleCard from "../../Components/Cards/ProjectSingleCard";
-import projectCardImage1 from '../../assets/Images/laptop-2 1.png'
-import projectCardImage2 from '../../assets/Images/image 82788.png'
-import projectCardImage3 from '../../assets/Images/image 82790.png'
-import projectCardImage4 from '../../assets/Images/image 82789.png'
-import RatingStar from "../../Components/SVGs/RatingSDtar";
-import ReviewCard from "../../Components/Cards/ReviewCard";
-import Footer from "../../Components/Footer/Footer";
-import BigObjectSvg from "../../Components/SVGs/BigObjectSvg";
-import FormLableInput from "../../Components/Form/LableInput";
-import Textarea from "../../Components/Form/Textarea";
-import ServiceSmallCard from "../../Components/Cards/ServiceSmallCard";
-import backgroundImage from '../../assets/Images/back.png'
-import awardImg1 from '../../assets/Images/image 82791.png'
-import awardImg2 from '../../assets/Images/image 82792.png'
-import awardImg3 from '../../assets/Images/image 82793.png'
-import awardImg4 from '../../assets/Images/image 82794.png'
-import awardImg5 from '../../assets/Images/image 82795.png'
-import awardImg6 from '../../assets/Images/image 82796.png'
-import bg from '../../assets/Images/bg.png'
-import bg1 from '../../assets/Images/bg1.png'
-import BlogCard from "../../Components/Cards/BlogCard";
-import StoriesSingleCard from "../../Components/Cards/StoriesSingleCard";
-import llll from '../../assets/Images/Mask group copy.png'
+import PK from "../Components/SVGs/PakLocation";
+import UK from "../Components/SVGs/UKLocation";
+import RightArrow from "../Components/SVGs/RightArrow";
+import UAE from "../Components/SVGs/UAELocation";
+import img from '../assets/Images/hero-image.png'
+import img1 from '../assets/Images/1.png'
+import img2 from '../assets/Images/2.png'
+import img3 from '../assets/Images/3.png'
+import img4 from '../assets/Images/4.png'
+import img5 from '../assets/Images/5.png'
+import img6 from '../assets/Images/6.png'
+import img7 from '../assets/Images/7.png'
+import img8 from '../assets/Images/image 82785 1.png'
+import ServiceSingleCard from "../Components/Cards/ServiceSingleCard";
+import image1 from '../assets/Images/image 82786.png'
+import image2 from '../assets/Images/laravel-logo 1.png'
+import image3 from '../assets/Images/product 1.png'
+import image4 from '../assets/Images/image 82787.png'
+import ProjectSingleCard from "../Components/Cards/ProjectSingleCard";
+import projectCardImage1 from '../assets/Images/laptop-2 1.png'
+import projectCardImage2 from '../assets/Images/image 82788.png'
+import projectCardImage3 from '../assets/Images/image 82790.png'
+import projectCardImage4 from '../assets/Images/image 82789.png'
+import RatingStar from "../Components/SVGs/RatingSDtar";
+import ReviewCard from "../Components/Cards/ReviewCard";
+import Footer from "../Components/Footer/Footer";
+import BigObjectSvg from "../Components/SVGs/BigObjectSvg";
+import FormLableInput from "../Components/Form/LableInput";
+import Textarea from "../Components/Form/Textarea";
+import ServiceSmallCard from "../Components/Cards/ServiceSmallCard";
+import backgroundImage from '../assets/Images/back.png'
+import awardImg1 from '../assets/Images/image 82791.png'
+import awardImg2 from '../assets/Images/image 82792.png'
+import awardImg3 from '../assets/Images/image 82793.png'
+import awardImg4 from '../assets/Images/image 82794.png'
+import awardImg5 from '../assets/Images/image 82795.png'
+import awardImg6 from '../assets/Images/image 82796.png'
+import bg from '../assets/Images/bg.png'
+import bg1 from '../assets/Images/bg1.png'
+import BlogCard from "../Components/Cards/BlogCard";
+import StoriesSingleCard from "../Components/Cards/StoriesSingleCard";
+import llll from '../assets/Images/Mask group copy.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import 'swiper/css/navigation';
 // Import Swiper styles
 import 'swiper/css';
 // Import required modules
-import { Autoplay } from 'swiper/modules';
-
-
+import { Autoplay , Navigation } from 'swiper/modules';
 
 
 function LandingPage() {
@@ -197,6 +195,10 @@ function LandingPage() {
                             <div className=" w-full flex items-center overflow-auto py-[22px] gap-[14px] md:gap-[18px] mt-[15px]">
                                 <Swiper
                                     slidesPerView={7}
+                                    navigation={{
+                                        nextEl: '.swiper-button-next-affiliation',
+                                        prevEl: '.swiper-button-prev-affiliation',
+                                      }}
                                     breakpoints={{
                                         
                                         100: {
@@ -219,7 +221,7 @@ function LandingPage() {
                                     disableOnInteraction: false,
                                     }}
                                     loop={true}
-                                    modules={[ Autoplay]}
+                                    modules={[ Autoplay, Navigation]}
                                     className="mySwiper w-full"
                                 >
                                     <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
@@ -231,18 +233,20 @@ function LandingPage() {
                                     <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
                                     <SwiperSlide className="max-w-max min-w-fit " ><ReviewCard/></SwiperSlide>
                                 </Swiper>
+                                
+
                             </div>
-                        <div className="flex items-center justify-center gap-[8px] ">
-                            <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
+                        <div className=" flex items-center justify-center gap-[8px] ">
+                            <button className="swiper-button-prev-affiliation flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                                 <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7H1V9H21V7Z" fill="#0D99FF"/>
                                 </svg>  
-                            </span>
-                            <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
+                            </button>
+                            <button className="swiper-button-next-affiliation flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
                                 <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.7071 7.29289C21.0976 7.68342 21.0976 8.31658 20.7071 8.70711L14.3431 15.0711C13.9526 15.4616 13.3195 15.4616 12.9289 15.0711C12.5384 14.6805 12.5384 14.0474 12.9289 13.6569L18.5858 8L12.9289 2.34315C12.5384 1.95262 12.5384 1.31946 12.9289 0.928932C13.3195 0.538408 13.9526 0.538408 14.3431 0.928932L20.7071 7.29289ZM0 7H20V9H0V7Z" fill="white"/>
                                 </svg>
-                            </span>
+                            </button>
                         </div>
                         <div className="flex items-center justify-end">
                             <BigObjectSvg/>
@@ -318,7 +322,7 @@ function LandingPage() {
                         <div className="max-w-[420px] w-full h-[250px] sm:h-[270px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage})`}}  ></div>
                         <div className="flex-1 ">
                             <h2 className="text-[22px] text-[#001436] font-[600] ">Data Analytics</h2>
-                            <p className="text-[12px] text-[#001436] mt-[6px] max-w-[400px] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p className="text-[12px] text-[#001436] mt-[6px] max-w-[400px] line-clamp-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
                     </div>
                     <div className="max-w-[1100px] mx-auto mt-[60px] rounded-[20px] bg-[#0D99FF] px-[30px] md:px-[50px] py-[32px] md:py-[42px] flex justify-between gap-[18px] md:gap-[22px] items-center sm:flex-row flex-col ">
@@ -403,50 +407,52 @@ function LandingPage() {
                             </svg>
                         </span>
                     </div>
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[65px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Awards & Recognitions</h2>
-                    <div className="flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
-                        <Swiper
-                            slidesPerView={8}
-                            breakpoints={{
-                                
-                                100: {
-                                    slidesPerView: 5,
+                    <div className="max-w-[1100px] mx-auto ">
+                        <h2 className="text-center text-[#0A0E19] font-[600] mt-[65px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Awards & Recognitions</h2>
+                        <div className="flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
+                            <Swiper
+                                slidesPerView={8}
+                                breakpoints={{
                                     
-                                },
-                                1024: {
-                                    slidesPerView: 6,
-                                    
-                                },
-                                1440: {
-                                    slidesPerView: 9,
-                                    
-                                },
+                                    100: {
+                                        slidesPerView: 5,
+                                        
+                                    },
+                                    1024: {
+                                        slidesPerView: 6,
+                                        
+                                    },
+                                    1440: {
+                                        slidesPerView: 9,
+                                        
+                                    },
+                                    }}
+                                spaceBetween={10}
+                                centeredSlides={true}
+                                autoplay={{
+                                delay: 1900,
+                                disableOnInteraction: false,
                                 }}
-                            spaceBetween={10}
-                            centeredSlides={true}
-                            autoplay={{
-                            delay: 1900,
-                            disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            modules={[ Autoplay]}
-                            className="mySwiper w-full"
-                        >
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg1} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg2} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg3} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg5} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] md:h-[126px] mr-[12px] " src={awardImg6} alt="" /></SwiperSlide>
-                        </Swiper>
+                                loop={true}
+                                modules={[ Autoplay]}
+                                className="mySwiper w-full"
+                            >
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg1} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg2} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg3} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg5} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg6} alt="" /></SwiperSlide>
+                            </Swiper>
+                        </div>
                     </div>
                     <div className="flex items-center justify-center gap-[8px] mt-[32px] ">
                         <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
@@ -549,8 +555,6 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-
-
         </>
     );
   }

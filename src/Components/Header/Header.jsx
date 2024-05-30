@@ -2,6 +2,8 @@ import { useState } from "react";
 import Logo from "../Logo";
 import Hamburger from "../SVGs/Hamburger";
 import HeaderliItem from "./HeaderLiItem";
+import { Link } from "react-router-dom";
+
 
 
 function Header() {
@@ -15,12 +17,42 @@ function Header() {
                     <Logo/>
                     <div className="hidden lg:block">
                         <div className="flex items-center gap-[28px] lg:gap-[44px] ">
-                            <HeaderliItem headerItem = 'home'/>
-                            <HeaderliItem headerItem = 'About Us'/>
-                            <HeaderliItem headerItem = 'Services'/>
-                            <HeaderliItem headerItem = 'portfolio'/>
-                            <HeaderliItem headerItem = 'Blogs'/>
-                            <HeaderliItem headerItem = 'Contact Us'/>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                    Home
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/about`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                About Us
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                Services
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                portfolio
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                Blogs
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                Contact Us
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
                             <div className="flex items-center justify-center px-[22px] py-[9px] bg-[#0D99FF] rounded-[7px] text-[14px] lg:text-[15px] text-[#fff] cursor-pointer select-none font-[400] ">
                                 Get Quotes
                             </div>
@@ -37,12 +69,42 @@ function Header() {
                         <div className=" w-full flex items-center justify-end p-[14px] absolute top-10 right-3 " onClick={()=>setToggltSideNav(!toggltSideNav)} >
                             <i class="fa-solid fa-xmark text-[#0D99FF] text-[32px] cursor-pointer "></i>
                         </div>
-                        <HeaderliItem headerItem = 'home'/>
-                        <HeaderliItem headerItem = 'About Us'/>
-                        <HeaderliItem headerItem = 'Services'/>
-                        <HeaderliItem headerItem = 'portfolio'/>
-                        <HeaderliItem headerItem = 'Blogs'/>
-                        <HeaderliItem headerItem = 'Contact Us'/>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                    Home
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/about`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                About Us
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                Services
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                portfolio
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                Blogs
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
+                            <Link to={`/`}>
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                Contact Us
+                                    <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
+                                </div>
+                            </Link>
                         <div className="flex items-center justify-center px-[22px] py-[9px] bg-[#0D99FF] rounded-[7px] text-[14px] lg:text-[15px] text-[#fff] cursor-pointer select-none font-[400] ">
                             Get Quotes
                         </div>
