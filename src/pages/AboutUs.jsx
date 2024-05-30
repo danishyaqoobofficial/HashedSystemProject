@@ -37,40 +37,40 @@ function AboutUs() {
     return (
         <>
            <section className="w-full bg-[#062345] ">
-                <div className="max-w-[900px] mx-auto py-[120px] px-[12px] md:px-[20px] ">
-                    <h2 className="text-[42px] md:text-[55px] font-[600] text-[#fff] text-center ">About Us</h2>
-                    <p className=" text-[16px] md:text-[18px] text-[#fff] text-center font-[300] mt-[12px] ">Hashed System is a leading software development company in Dubai offering custom solutions. We aim to deliver innovative technology products that bring client satisfaction.</p>
+                <div className="max-w-[900px] w-[90%] md:w-full mx-auto py-[120px] px-[12px] md:px-[20px] ">
+                    <h2 className="text-[34px] sm:text-[42px] md:text-[55px] font-[600] text-[#fff] text-center ">About Us</h2>
+                    <p className=" text-[14px] sm:text-[16px] md:text-[18px] text-[#fff] text-center font-[300] mt-[12px] ">Hashed System is a leading software development company in Dubai offering custom solutions. We aim to deliver innovative technology products that bring client satisfaction.</p>
                 </div>
            </section>
            <main className="bg-[#fff] w-full ">
                 <div className="max-w-[1200px] mx-auto py-[74px] px-[12px] md:px-[20px] ">
                     <div className="max-w-[900px] mx-auto " >
-                        <h3 className="text-[#0D99FF] text-[18px] text-center font-[400] ">How we define our culture</h3>
-                        <p className="text-[20px] text-[#000000] text-center mt-[11px] font-[300] ">Our culture forms the bedrock of our organization, emphasizing lifelong learning and guided by our dedication to openness, inclusivity, and uncompromising integrity. This fuels our ability to develop innovative and comprehensive digital solutions for our clients, ensuring we remain agile in a constantly evolving landscape.</p>
+                        <h3 className="text-[#0D99FF] text-[16px] md:text-[18px] text-center font-[400] ">How we define our culture</h3>
+                        <p className="text-[20px] md:text-[22px] text-[#000000] text-center mt-[11px] font-[300] ">Our culture forms the bedrock of our organization, emphasizing lifelong learning and guided by our dedication to openness, inclusivity, and uncompromising integrity. This fuels our ability to develop innovative and comprehensive digital solutions for our clients, ensuring we remain agile in a constantly evolving landscape.</p>
                     </div>
-                    <div className="flex items-start justify-center mt-[52px] gap-[72px] flex-wrap ">
+                    <div className="flex items-start justify-center mt-[62px] gap-[72px] flex-wrap ">
                         <div className="flex items-center justify-center flex-col max-w-[180px] ">
-                            <h2 className="text-[#0D99FF] text-[42px] font-[600] text-center ">90+</h2>
-                            <p className="text-center text-[13px] text-[#001436] line-clamp-3 ">Product solutions delivered</p>
+                            <h2 className="text-[#0D99FF] text-[34px] md:text-[42px] font-[600] text-center ">90+</h2>
+                            <p className="text-center text-[12px] md:text-[13px] text-[#001436] line-clamp-3 ">Product solutions delivered</p>
                         </div>
                         <div className="flex items-center justify-center flex-col max-w-[180px] ">
-                            <h2 className="text-[#0D99FF] text-[42px] font-[600] text-center ">12</h2>
-                            <p className="text-center text-[13px] text-[#001436] line-clamp-3 ">Business Domain</p>
+                            <h2 className="text-[#0D99FF] text-[34px] md:text-[42px] font-[600] text-center ">12</h2>
+                            <p className="text-center text-[12px] md:text-[13px] text-[#001436] line-clamp-3 ">Business Domain</p>
                         </div>
                         <div className="flex items-center justify-center flex-col max-w-[180px] ">
-                            <h2 className="text-[#0D99FF] text-[42px] font-[600] text-center ">20+</h2>
-                            <p className="text-center text-[13px] text-[#001436] line-clamp-3 ">Skill-gaps bridges through staff augmentation</p>
+                            <h2 className="text-[#0D99FF] text-[34px] md:text-[42px] font-[600] text-center ">20+</h2>
+                            <p className="text-center text-[12px] md:text-[13px] text-[#001436] line-clamp-3 ">Skill-gaps bridges through staff augmentation</p>
                         </div>
                         <div className="flex items-center justify-center flex-col max-w-[180px] ">
-                            <h2 className="text-[#0D99FF] text-[42px] font-[600] text-center ">150+</h2>
-                            <p className="text-center text-[13px] text-[#001436] line-clamp-3 ">Skilled professional</p>
+                            <h2 className="text-[#0D99FF] text-[34px] md:text-[42px] font-[600] text-center ">150+</h2>
+                            <p className="text-center text-[12px] md:text-[13px] text-[#001436] line-clamp-3 ">Skilled professional</p>
                         </div>
                     </div>
                 </div>
            </main>
            <div className="w-full bg-[#E8F0FA] ">
                 <div className=" max-w-[1200px] mx-auto py-[36px] px-[12px] md:px-[20px] ">
-                    <h2 className="mt-[46px] text-center text-[#0A0E19] text-[32px] font-[600] ">Our Vision</h2>
+                    <h2 className="mt-[46px] text-center text-[#0A0E19] text-[26px] sm:text-[30px] md:text-[42px] font-[600] ">Our Vision</h2>
                     <div className="mt-[22px] flex items-center justify-center gap-[22px] flex-wrap ">
                         <div className="bg-[#fff] max-w-[285px] w-full flex flex-col items-center justify-center px-[40px] py-[32px] rounded-[20px] ">
                             <img className='h-[95px] ' src={img1} alt="" />
@@ -91,12 +91,12 @@ function AboutUs() {
                 </div>
            </div>
            <div className='w-full bg-[#fff] '>
-                <div className='max-w-[1100px] mx-auto flex items-center py-[110px] px-[12px] md:px-[20px]  '>
+                <div className='max-w-[1100px] mx-auto flex items-center py-[110px] px-[12px] md:px-[20px] lg:flex-row flex-col '>
                     <div className='flex-1'>
                         <h2 className='text-[#001436] text-[26px] sm:text-[30px] md:text-[42px] font-[600] '>Leading the Digital Transformation in Industry </h2>
                         <p className=" text-[14px] text-[#0a0e19cd] mt-[11px] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
-                    <div className=' flex flex-1 items-center justify-end relative '>
+                    <div className=' flex flex-1 items-center justify-end relative mt-[26px] lg:mt-[0px] '>
                         <img className='h-[430px] ' src={banner1} alt="" />
                         <img className='h-[400px] absolute right-[30%] top-[26%] ' src={banner2} alt="" />
                     </div>
@@ -220,22 +220,45 @@ function AboutUs() {
                         </span>
                     </div>
                 </div>
-                <div className='max-w-[1100px] mx-auto mt-[52px] px-[12px] sm:px-[20px] '>
+                <div className='max-w-[1100px] mx-auto mt-[72px] px-[12px] sm:px-[20px] '>
                     <h2 className='text-[#001436] text-[26px] sm:text-[30px] md:text-[42px] font-[600] '>Challenging proven cultures</h2>
-                    <p className='mt-[70px] text-[13px] text-[#0A0E19] '>We don’t entertain barricades in communication and every conversation flows endlessly through the floor</p>
-                    <div className='mt-[22px] flex items-center gap-[22px] flex-wrap '>
-                        <div className="flex flex-col gap-[22px] ">
-                            <div className="max-w-[420px] w-full h-[230px] sm:h-[250px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage1})`}}  ></div>
+                    <p className='mt-[60px] text-[13px] text-[#0A0E19] '>We don’t entertain barricades in communication and every conversation flows endlessly through the floor</p>
+                    <div className='mt-[22px] flex items-center gap-[22px] md:flex-row flex-col '>
+                        <div className="flex flex-col gap-[22px] flex-1 ">
+                            <div className="h-[270px] sm:h-[300px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage1})`}}  ></div>
                             <div className="flex-1 ">
                                 <h2 className="text-[22px] text-[#001436] font-[600] ">Exceptional Work</h2>
-                                <p className="text-[12px] text-[#001436] mt-[6px] max-w-[400px] line-clamp-4 ">Striving to do the highest level of work as we feel a true sense of accomplishment with our commitment to delivering exceptional work that makes a real difference.</p>
+                                <p className="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Striving to do the highest level of work as we feel a true sense of accomplishment with our commitment to delivering exceptional work that makes a real difference.</p>
                             </div>
                         </div>
-                        <div className="flex flex-col gap-[22px] ">
-                            <div className="max-w-[420px] w-full h-[230px] sm:h-[250px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage2})`}}  ></div>
+                        <div className="flex flex-col gap-[22px] flex-1">
+                            <div className="h-[270px] sm:h-[300px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage2})`}}  ></div>
                             <div className="flex-1 ">
                                 <h2 className="text-[22px] text-[#001436] font-[600] ">Exceptional Work</h2>
-                                <p className="text-[12px] text-[#001436] mt-[6px] max-w-[400px] line-clamp-4 ">Striving to do the highest level of work as we feel a true sense of accomplishment with our commitment to delivering exceptional work that makes a real difference.</p>
+                                <p className="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Striving to do the highest level of work as we feel a true sense of accomplishment with our commitment to delivering exceptional work that makes a real difference.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='mt-[22px] flex items-center gap-[22px] md:flex-row flex-col '>
+                        <div className="flex flex-col gap-[22px] flex-1 ">
+                            <div className="h-[270px] sm:h-[300px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage1})`}}  ></div>
+                            <div className="flex-1 ">
+                                <h2 className="text-[22px] text-[#001436] font-[600] ">Exceptional Work</h2>
+                                <p className="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Striving to do the highest level of work as we feel a true sense of accomplishment with our commitment to delivering exceptional work that makes a real difference.</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-[22px] flex-1">
+                            <div className="h-[270px] sm:h-[300px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage2})`}}  ></div>
+                            <div className="flex-1 ">
+                                <h2 className="text-[22px] text-[#001436] font-[600] ">Exceptional Work</h2>
+                                <p className="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Striving to do the highest level of work as we feel a true sense of accomplishment with our commitment to delivering exceptional work that makes a real difference.</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-[22px] flex-1">
+                            <div className="h-[270px] sm:h-[300px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage2})`}}  ></div>
+                            <div className="flex-1 ">
+                                <h2 className="text-[22px] text-[#001436] font-[600] ">Exceptional Work</h2>
+                                <p className="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Striving to do the highest level of work as we feel a true sense of accomplishment with our commitment to delivering exceptional work that makes a real difference.</p>
                             </div>
                         </div>
                     </div>
@@ -280,41 +303,43 @@ function AboutUs() {
                             <p className="text-[12px] text-[#180F34] ">Blog</p>
                         </div>
                     </div>
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[15px] leading-[50px] text-[32px] md:text-[42px] ">We aim to ensure that knowledge and news are readily accessible to all</h2>
-                    <div className="flex items-center lg:items-start mt-[22px] gap-[22px]">
-                        <Swiper
-                            slidesPerView={3}
-                            breakpoints={{
-                                
-                                100: {
-                                    slidesPerView: 1,
+                    <div className='max-w-[1100px] mx-auto'>
+                        <h2 className="text-center text-[#0A0E19] font-[600] mt-[15px] leading-[50px] text-[32px] md:text-[42px] ">We aim to ensure that knowledge and news are readily accessible to all</h2>
+                        <div className="flex items-center lg:items-start mt-[22px] gap-[22px]">
+                            <Swiper
+                                slidesPerView={3}
+                                breakpoints={{
                                     
-                                },
-                                1024: {
-                                    slidesPerView: 2,
-                                    
-                                },
-                                1440: {
-                                    slidesPerView: 3,
-                                    
-                                },
+                                    100: {
+                                        slidesPerView: 1,
+                                        
+                                    },
+                                    1024: {
+                                        slidesPerView: 2,
+                                        
+                                    },
+                                    1440: {
+                                        slidesPerView: 3,
+                                        
+                                    },
+                                    }}
+                                spaceBetween={10}
+                                centeredSlides={true}
+                                autoplay={{
+                                delay: 1900,
+                                disableOnInteraction: false,
                                 }}
-                            spaceBetween={10}
-                            centeredSlides={true}
-                            autoplay={{
-                            delay: 1900,
-                            disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            modules={[ Autoplay]}
-                            className="mySwiper w-full"
-                        >
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
-                        </Swiper>
-                        
+                                loop={true}
+                                modules={[ Autoplay]}
+                                className="mySwiper w-full"
+                            >
+                                <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
+                            </Swiper>
+                            
+                        </div>
                     </div>
                     <div className="flex items-center justify-center gap-[8px] mt-[52px] ">
                         <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer rounded-[12px] border border-[#0D99FF] ">
