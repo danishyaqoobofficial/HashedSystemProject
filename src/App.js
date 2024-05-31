@@ -11,6 +11,7 @@ import Header from './Components/Header/Header';
 import LandingPage from './pages/Home';
 import Footer from './Components/Footer/Footer';
 import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 
 
 function App() {
@@ -39,6 +40,10 @@ const router = createBrowserRouter(
         {
           path : '/about',
           element : <AboutUs/>
+        },
+        {
+          path : '/contact',
+          element : <ContactUs/>
         }
       ]
     }

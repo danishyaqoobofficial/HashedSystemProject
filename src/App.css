@@ -31,4 +31,9 @@ top: 56%;
 left: 50%;
 transform: translateX(50%);
 } 
-
+.transorm_translate{
+    transform: translate(-50% , -50% );
+}
+.hh{
+    background-image: linear-gradient(to bottom right, #085C99 , #0D99FF);
+}
