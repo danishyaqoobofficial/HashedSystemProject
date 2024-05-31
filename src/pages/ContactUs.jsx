@@ -27,11 +27,11 @@ import RightArrow from '../Components/SVGs/RightArrow'
 function ContactUs() {
     return (
         <>
-            <main className='w-full flex '>
-                <div className='w-[50%] flex-1 hh'  >
-                    <div className='z-0 w-[580px] ml-auto mt-auto pb-[90px] relative pr-[120px] overflow-hidden '>
-                        <img className=' absolute right-0 select-none !z-0 h-auto ' src={contact_banner} alt="" />
-                        <div className='pt-[120px] !z-50 pl-[15px] '>
+            <main className='w-full flex flex_col '>
+                <div className='w-[50%] flex-1 lenier_g flex_col1 '  >
+                    <div className='z-0 w-[580px] flex_col1 ml-auto mt-auto pb-[90px] relative pr-[20px] lg:pr-[120px] overflow-hidden '>
+                        <img className=' absolute right-0 select-none !z-0 h-full ' src={contact_banner} alt="" />
+                        <div className='pt-[120px] !z-50 padding_left '>
                             <p className='text-[#FFFFFF] text-[14px] font-[300]  '>Lets built the next big thing!</p>
                             <h2 className='text-[38px] font-[600] text-[#fff] mt-[32px] leading-[46px] '>Have a project? Let’s connect</h2>
                             <p className='text-[#ffffffc8] text-[12px] font-[300] mt-[8px] '>Send your details and we’ll get in touch</p>
@@ -40,19 +40,19 @@ function ContactUs() {
                                     <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.10892 11.0421C7.90148 10.1165 8.65684 9.19659 9.45368 8.31319C11.214 6.36184 13.1232 4.57215 15.272 3.04569C15.6368 2.78675 16.0023 2.63225 16.4594 2.6723C16.8378 2.70521 17.2233 2.65871 17.6017 2.69019C17.7426 2.70163 17.9451 2.80535 17.988 2.91694C18.0309 3.02995 17.9551 3.2517 17.8556 3.34612C13.7062 7.2853 10.6547 12.0464 7.71192 16.889C7.66829 16.9605 7.62823 17.0327 7.5846 17.1043C7.33996 17.5027 7.09461 17.5006 6.8371 17.1129C5.96086 15.7938 5.09176 14.4698 4.1962 13.1637C3.53598 12.2016 2.84499 11.2602 2.15401 10.3196C1.94872 10.0399 1.93298 9.82177 2.20479 9.57856C2.49735 9.31676 2.77704 9.03779 3.04313 8.74881C3.2756 8.49559 3.48662 8.50275 3.75772 8.69516C4.8643 9.48128 5.9816 10.2531 7.10892 11.0406V11.0421Z" fill="white"/>
                                     </svg>
-                                    <p className='text-[11px] text-[#ffffffcb] line-clamp-1 whitespace-nowrap '>Expect a response within 24 hours.</p>
+                                    <p className='text-[11px] text-[#ffffffcb] line-clamp-1  '>Expect a response within 24 hours.</p>
                                 </div>
                                 <div className='flex items-center gap-[8px] mt-[8px] '>
                                     <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.10892 11.0421C7.90148 10.1165 8.65684 9.19659 9.45368 8.31319C11.214 6.36184 13.1232 4.57215 15.272 3.04569C15.6368 2.78675 16.0023 2.63225 16.4594 2.6723C16.8378 2.70521 17.2233 2.65871 17.6017 2.69019C17.7426 2.70163 17.9451 2.80535 17.988 2.91694C18.0309 3.02995 17.9551 3.2517 17.8556 3.34612C13.7062 7.2853 10.6547 12.0464 7.71192 16.889C7.66829 16.9605 7.62823 17.0327 7.5846 17.1043C7.33996 17.5027 7.09461 17.5006 6.8371 17.1129C5.96086 15.7938 5.09176 14.4698 4.1962 13.1637C3.53598 12.2016 2.84499 11.2602 2.15401 10.3196C1.94872 10.0399 1.93298 9.82177 2.20479 9.57856C2.49735 9.31676 2.77704 9.03779 3.04313 8.74881C3.2756 8.49559 3.48662 8.50275 3.75772 8.69516C4.8643 9.48128 5.9816 10.2531 7.10892 11.0406V11.0421Z" fill="white"/>
                                     </svg>
-                                    <p className='text-[11px] text-[#ffffffcb] line-clamp-1 whitespace-nowrap '>We’re open to signing an NDA, if needed.</p>
+                                    <p className='text-[11px] text-[#ffffffcb] line-clamp-1  '>We’re open to signing an NDA, if needed.</p>
                                 </div>
                                 <div className='flex items-center gap-[8px] mt-[8px] '>
                                     <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.10892 11.0421C7.90148 10.1165 8.65684 9.19659 9.45368 8.31319C11.214 6.36184 13.1232 4.57215 15.272 3.04569C15.6368 2.78675 16.0023 2.63225 16.4594 2.6723C16.8378 2.70521 17.2233 2.65871 17.6017 2.69019C17.7426 2.70163 17.9451 2.80535 17.988 2.91694C18.0309 3.02995 17.9551 3.2517 17.8556 3.34612C13.7062 7.2853 10.6547 12.0464 7.71192 16.889C7.66829 16.9605 7.62823 17.0327 7.5846 17.1043C7.33996 17.5027 7.09461 17.5006 6.8371 17.1129C5.96086 15.7938 5.09176 14.4698 4.1962 13.1637C3.53598 12.2016 2.84499 11.2602 2.15401 10.3196C1.94872 10.0399 1.93298 9.82177 2.20479 9.57856C2.49735 9.31676 2.77704 9.03779 3.04313 8.74881C3.2756 8.49559 3.48662 8.50275 3.75772 8.69516C4.8643 9.48128 5.9816 10.2531 7.10892 11.0406V11.0421Z" fill="white"/>
                                     </svg>
-                                    <p className='text-[11px] text-[#ffffffcb] line-clamp-1 whitespace-nowrap '>Engage directly with our product experts, not account managers</p>
+                                    <p className='text-[11px] text-[#ffffffcb] line-clamp-1 '>Engage directly with our product experts, not account managers</p>
                                 </div>
                             </div>
                             <div className='mt-[120px] '>
@@ -64,13 +64,13 @@ function ContactUs() {
                         </div>
                     </div>
                 </div>
-                <div className='w-[50%] flex-1 '>
-                    <div className='py-[50px] px-[38px] w-[580px] '>
-                        <h2 className=" text-[#0A0E19] font-[600] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[36px]  ">Contact Us</h2>
+                <div className='w-[50%] flex-1 flex_col2'>
+                    <div className='py-[50px] px-[15px] sm:px-[38px] flex_col2 w-[580px] finish_padding '>
+                        <h2 className=" text-[#0A0E19] font-[600] leading-[32px] sm:leading-[50px] text-[24px] sm:text-[32px] md:text-[36px]  ">Contact Us</h2>
                         <div className='mt-[18px] w-full '>
                             <input className='border-[1px] w-full border-[#ced7e4d6] rounded-[7px] text-[#7F8998] text-[14px] flex-1 outline-none px-[18px] py-[10px] ' type="text" name="" id="" placeholder='Name' />
                         </div>
-                        <div className='mt-[18px] flex items-center gap-[14px] '>
+                        <div className='mt-[18px] flex items-center gap-[14px] flex-col sm:flex-row '>
                             <input className='border-[1px] w-full border-[#ced7e4d6] rounded-[7px] text-[#7F8998] text-[14px] flex-1 outline-none px-[18px] py-[10px] ' type="text" name="" id="" placeholder='Mobile' />
                             <input className='border-[1px] w-full border-[#ced7e4d6] rounded-[7px] text-[#7F8998] text-[14px] flex-1 outline-none px-[18px] py-[10px] ' type="text" name="" id="" placeholder='Company' />
                         </div>

@@ -15,10 +15,25 @@
         justify-content: center;
         flex-direction: column;
     }
+    .finish_padding{
+        padding-bottom: 0px !important;
+    }
 }
 @media (max-width: 340px) {
     .review_card{
         width: 100%;
+    }
+}
+@media (max-width: 1168px) {
+    .flex_col{
+        flex-direction: column !important;
+    }
+    .flex_col1 , .flex_col2 {
+        width: 100%;
+    }
+    .padding_left{
+        padding-left: 22px;
+        padding-top: 60px;
     }
 }
 .stories__after ::after{
@@ -34,6 +49,6 @@ transform: translateX(50%);
 .transorm_translate{
     transform: translate(-50% , -50% );
 }
-.hh{
+.lenier_g{
     background-image: linear-gradient(to bottom right, #085C99 , #0D99FF);
 }
