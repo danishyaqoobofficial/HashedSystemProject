@@ -39,7 +39,6 @@ import bg from '../assets/Images/bg.png'
 import bg1 from '../assets/Images/bg1.png'
 import BlogCard from "../Components/Cards/BlogCard";
 import StoriesSingleCard from "../Components/Cards/StoriesSingleCard";
-import llll from '../assets/Images/Mask group copy.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -56,7 +55,7 @@ function LandingPage() {
             <main className="bg-[#E8F0FA] w-full ">
                 <section className="max-w-[1200px] mx-auto pt-[30px] md:pt-[60px] xl:pt-[80px] flex gap-[18px] md:gap-[22px] px-[15px] sm:px-[20px] lg:flex-row flex-col ">
                     <div className="flex-1 pt-[32px] ">
-                        <h2 className="text-[34px] sm:text-[42px] md:text-[60px] text-[#001436] font-[600] text-start leading-[50px] md:leading-[70px] line-clamp-3 ">Software Development & IT Company</h2>
+                        <h2 className="text-[32px] sm:text-[42px] md:text-[60px] text-[#001436] font-[600] text-start leading-[48px] md:leading-[70px] line-clamp-3 ">Software Development & IT Company</h2>
                         <p className="text-[#0D99FF] text-[24px] sm:text-[28px] md:text-[32px] mt-[14px] font-[600] text-start line-clamp-1 ">in Dubai - Hashed System</p>
                         <p className="text-start text-[#001436] text-[13px] sm:text-[14px] md:text-[16px] mt-[12px] line-clamp-4 ">Hashed System is a leading software development company in Dubai offering custom solutions. We aim to deliver innovative technology products that bring client satisfaction.</p>
                         <div className="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer max-w-max mt-[16px] sm:mt-[22px] ">
@@ -109,7 +108,7 @@ function LandingPage() {
             <div className="bg-[#fff] py-[42px] px-[8px] sm:px-[12px] ">
                 <div className="max-w-[1200px] mx-auto flex items-center gap-[12px] md:gap-[32px] justify-between sm:flex-row flex-col ">
                     <div className=" flex-1 ">
-                        <h2 className="text-[#0A0E19] text-[26px] sm:text-[30px] md:text-[42px] font-[600] text-center sm:text-start ">Our Valued Clients</h2>
+                        <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] sm:text-start ">Our Valued Clients</h2>
                         <p className="text-[12px] md:text-[13px] mt-[9px] text-center sm:text-start text-[#001436] ">Build seamless mobile apps with Flutter. Its layered architecture enables flexible designs and high-speed rendering, allowing us to focus on optimized user experiences. Flutter empowers us to deliver customized front-end and back-end mobile solutions.</p>
                     </div>
                     <div className="flex items-center gap-[12px] md:gap-[16px] flex-wrap flex-1 justify-center mt-[15px] sm:mt-[0px] ">
@@ -125,7 +124,7 @@ function LandingPage() {
             </div>
             <div className="bg-[#E8F0FA] py-[44px] w-full px-[15px] sm:px-[12px] ">
                 <div className="max-w-[1200px] mx-auto ">
-                    <h2 className=" text-center text-[26px] sm:text-[30px] md:text-[42px] text-[#0A0E19] font-[600] ">Our Services</h2>
+                    <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Our Services</h2>
                     <div className="mt-[22px] bg-[#0D99FF] rounded-[20px] p-[30px] flex gap-[42px] items-center flex-col-reverse sm:flex-row ">
                         <div className="flex-[3] ">
                             <h2 className="text-[#fff] font-[500] text-[24px] md:text-[28px] text-start ">Django - Python Application</h2>
@@ -174,7 +173,7 @@ function LandingPage() {
                                 <p className="text-[12px] text-[#180F34] ">Portfolio</p>
                             </div>
                         </div>
-                        <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">We craft a unique solution for every project</h2>
+                        <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] ">We craft a unique solution for every project</h2>
                         <div className="flex items-center flex-wrap mt-[24px] md:mt-[50px] gap-[22px] justify-center ">
                             <ProjectSingleCard color = '#eae1ca' image = {projectCardImage1} heading = 'N Style' />
                             <ProjectSingleCard color = '#d0efe5' image = {projectCardImage2} heading = 'Concierge Bookings' />
@@ -191,8 +190,8 @@ function LandingPage() {
                         </div>
                     </div>
                     <div className="pt-[22px] ">
-                        <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] max-w-[660px] mx-auto ">Affiliation</h2>
-                            <div className=" w-full flex items-center overflow-auto py-[22px] gap-[14px] md:gap-[18px] mt-[15px] justify-center ">
+                        <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">Ainlockingliation</h2>
+                            <div className=" w-full flex items-center py-[22px] gap-[14px] md:gap-[18px] mt-[15px] justify-center ">
                                 <Swiper
                                     slidesPerView={1}
                                     navigation={{
@@ -263,8 +262,8 @@ function LandingPage() {
             </div>
             <div className="w-full bg-[#E8F0FA] ">
                 <div className="max-w-[1200px] mx-auto py-[62px] px-[15px] md:px-[20px] ">
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Achievements and Success Stories</h2>
-                    <p className=" text-[15px] text-[#0A0E19] text-center mt-[12px] ">Our projects showcase our dedication to excellence and product delivery, featuring innovative and impactful solutions.</p>
+                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Achievements and Success Stories</h2>
+                    <p className=" text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[12px] ">Our projects showcase our dedication to excellence and product delivery, featuring innovative and impactful solutions.</p>
                     <div className="py-[22px] ">
                         <StoriesSingleCard number = '1' color = '#eae1ca' image = {projectCardImage1} title = 'N Style' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
                         <StoriesSingleCard number = '2' color = '#d0efe5' image = {projectCardImage2} title = 'Concierge Bookings' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' row_reverse />
@@ -282,7 +281,7 @@ function LandingPage() {
             </div>
             <div className="w-full bg-[#fff]  " >
                 <div className="max-w-[1200px] mx-auto py-[32px] px-[15px] md:px-[20px] ">
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Unlocking Business Potential Through Our Expertise</h2>
+                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] ">Unlocking Business Potential Through Our Expertise</h2>
                         <div className=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
                             <Swiper
                                 slidesPerView={10}
@@ -343,7 +342,7 @@ function LandingPage() {
                             </div>
                         </div>
                     </div>
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[32px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Technology</h2>
+                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Technology</h2>
                     <div className=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
                             <Swiper
                                 slidesPerView={10}
@@ -402,23 +401,27 @@ function LandingPage() {
                         <img className="h-[56px] w-[110px] " src={img6} alt="" />
                         <img className="h-[56px] w-[110px] " src={img7} alt="" />
                     </div>
-                    <div className="flex items-center justify-center gap-[8px] mt-[32px] ">
-                        <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
+                    <div className=" flex items-center justify-center gap-[8px] mt-[32px] ">
+                        <button className="swiper-button-prev-Technology flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7H1V9H21V7Z" fill="#0D99FF"/>
                             </svg>  
-                        </span>
-                        <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
+                        </button>
+                        <button className="swiper-button-next-Technology flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.7071 7.29289C21.0976 7.68342 21.0976 8.31658 20.7071 8.70711L14.3431 15.0711C13.9526 15.4616 13.3195 15.4616 12.9289 15.0711C12.5384 14.6805 12.5384 14.0474 12.9289 13.6569L18.5858 8L12.9289 2.34315C12.5384 1.95262 12.5384 1.31946 12.9289 0.928932C13.3195 0.538408 13.9526 0.538408 14.3431 0.928932L20.7071 7.29289ZM0 7H20V9H0V7Z" fill="white"/>
                             </svg>
-                        </span>
+                        </button>
                     </div>
                     <div className="max-w-[1100px] mx-auto ">
-                        <h2 className="text-center text-[#0A0E19] font-[600] mt-[65px] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Awards & Recognitions</h2>
+                        <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Awards & Recognitions</h2>
                         <div className="flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
                             <Swiper
                                 slidesPerView={8}
+                                navigation={{
+                                    nextEl: '.swiper-button-next-Awards',
+                                    prevEl: '.swiper-button-prev-Awards',
+                                  }}
                                 breakpoints={{
                                     
                                     100: {
@@ -441,7 +444,7 @@ function LandingPage() {
                                 disableOnInteraction: false,
                                 }}
                                 loop={true}
-                                modules={[ Autoplay]}
+                                modules={[ Autoplay , Navigation]}
                                 className="mySwiper w-full"
                             >
                                 <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg1} alt="" /></SwiperSlide>
@@ -461,17 +464,17 @@ function LandingPage() {
                             </Swiper>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center gap-[8px] mt-[32px] ">
-                        <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
+                    <div className=" flex items-center justify-center gap-[8px] mt-[32px] ">
+                        <button className="swiper-button-prev-Awards flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7H1V9H21V7Z" fill="#0D99FF"/>
                             </svg>  
-                        </span>
-                        <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
+                        </button>
+                        <button className="swiper-button-next-Awards flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.7071 7.29289C21.0976 7.68342 21.0976 8.31658 20.7071 8.70711L14.3431 15.0711C13.9526 15.4616 13.3195 15.4616 12.9289 15.0711C12.5384 14.6805 12.5384 14.0474 12.9289 13.6569L18.5858 8L12.9289 2.34315C12.5384 1.95262 12.5384 1.31946 12.9289 0.928932C13.3195 0.538408 13.9526 0.538408 14.3431 0.928932L20.7071 7.29289ZM0 7H20V9H0V7Z" fill="white"/>
                             </svg>
-                        </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -485,10 +488,14 @@ function LandingPage() {
                             <p className="text-[12px] text-[#180F34] ">Blog</p>
                         </div>
                     </div>
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[15px] leading-[50px] text-[32px] md:text-[42px] ">We aim to ensure that knowledge and news are readily accessible to all</h2>
+                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">We aim to ensure that knowledge and news are readily accessible to all</h2>
                     <div className="flex items-center lg:items-start mt-[22px] gap-[22px] justify-center">
                         <Swiper
                             slidesPerView={3}
+                            navigation={{
+                                nextEl: '.swiper-button-next-blog',
+                                prevEl: '.swiper-button-prev-blog',
+                              }}
                             breakpoints={{
                                 
                                 100: {
@@ -512,7 +519,7 @@ function LandingPage() {
                             disableOnInteraction: false,
                             }}
                             loop={true}
-                            modules={[ Autoplay]}
+                            modules={[ Autoplay , Navigation]}
                             className="mySwiper w-full"
                         >
                             <SwiperSlide className="" ><BlogCard bg = {bg1} date = '21 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' /></SwiperSlide>
@@ -522,24 +529,24 @@ function LandingPage() {
                         </Swiper>
                         
                     </div>
-                    <div className="flex items-center justify-center gap-[8px] mt-[52px] ">
-                        <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer rounded-[12px] border border-[#0D99FF] ">
+                    <div className=" flex items-center justify-center gap-[8px] mt-[32px] ">
+                        <button className="swiper-button-prev-blog flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7H1V9H21V7Z" fill="#0D99FF"/>
                             </svg>  
-                        </span>
-                        <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
+                        </button>
+                        <button className="swiper-button-next-blog flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.7071 7.29289C21.0976 7.68342 21.0976 8.31658 20.7071 8.70711L14.3431 15.0711C13.9526 15.4616 13.3195 15.4616 12.9289 15.0711C12.5384 14.6805 12.5384 14.0474 12.9289 13.6569L18.5858 8L12.9289 2.34315C12.5384 1.95262 12.5384 1.31946 12.9289 0.928932C13.3195 0.538408 13.9526 0.538408 14.3431 0.928932L20.7071 7.29289ZM0 7H20V9H0V7Z" fill="white"/>
                             </svg>
-                        </span>
+                        </button>
                     </div>
                 </div>
             </div>
             <div className="w-full bg-[#fff] ">
                 <div className="max-w-[1200px] mx-auto py-[50px] px-[15px] md:px-[20px] ">
-                    <h2 className=" text-center text-[#0A0E19] font-[600] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] max-w-[660px] mx-auto ">Have a project? Let's discuss</h2>
-                    <p className=" text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this form, expect to hear back from us within 24 hours.</p>
+                    <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">Have a project? Let's discuss</h2>
+                    <p className=" text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this form, expect to hear back from us within 24 hours.</p>
                     <div className="flex items-center gap-[12px] mt-[26px] flex-col lg:flex-row ">
                         <div className="flex items-center gap-[12px] w-full flex-col sm:flex-row ">
                             <FormLableInput lable = 'Phone *' placeholder = 'Your Name' htmlFor = 'Your Name' id = 'Your Name' type = 'text' />
