@@ -52,3 +52,7 @@ transform: translateX(50%);
 .lenier_g{
     background-image: linear-gradient(to bottom right, #085C99 , #0D99FF);
 }
+
+.lllll:hover  .lll{
+    display: block;
+}
