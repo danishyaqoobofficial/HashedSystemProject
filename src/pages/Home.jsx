@@ -105,8 +105,8 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#fff] py-[42px] px-[8px] sm:px-[12px] ">
-                <div className="max-w-[1200px] mx-auto flex items-center gap-[12px] md:gap-[32px] justify-between sm:flex-row flex-col ">
+            <div className="bg-[#fff] py-[42px] ">
+                <div className="max-w-[1200px] mx-auto flex items-center gap-[12px] md:gap-[32px] justify-between sm:flex-row flex-col px-[15px] sm:px-[20px]  ">
                     <div className=" flex-1 ">
                         <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] sm:text-start ">Our Valued Clients</h2>
                         <p className="text-[12px] md:text-[13px] mt-[9px] text-center sm:text-start text-[#001436] ">Build seamless mobile apps with Flutter. Its layered architecture enables flexible designs and high-speed rendering, allowing us to focus on optimized user experiences. Flutter empowers us to deliver customized front-end and back-end mobile solutions.</p>
@@ -122,8 +122,8 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div className="bg-[#E8F0FA] py-[44px] w-full px-[15px] sm:px-[12px] ">
-                <div className="max-w-[1200px] mx-auto ">
+            <div className="bg-[#E8F0FA] py-[44px] w-full ">
+                <div className="max-w-[1200px] mx-auto px-[15px] sm:px-[20px] ">
                     <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Our Services</h2>
                     <div className="mt-[22px] bg-[#0D99FF] rounded-[20px] p-[30px] flex gap-[42px] items-center flex-col-reverse sm:flex-row ">
                         <div className="flex-[3] ">
@@ -191,7 +191,7 @@ function LandingPage() {
                     </div>
                     <div className="pt-[22px] ">
                         <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">Ainlockingliation</h2>
-                            <div className=" w-full flex items-center py-[22px] gap-[14px] md:gap-[18px] mt-[15px] justify-center ">
+                            <div className=" w-full flex items-center py-[22px] gap-[14px] md:gap-[18px] mt-[15px] justify-center px-[15px] sm:px-[20px] ">
                                 <Swiper
                                     slidesPerView={1}
                                     navigation={{
@@ -204,8 +204,8 @@ function LandingPage() {
                                         slidesPerView: 1,
                                         
                                         },
-                                        320: {
-                                            slidesPerView: 1,
+                                        340: {
+                                            slidesPerView: 2,
                                         },
                                         600: {
                                             slidesPerView: 4,
@@ -324,14 +324,14 @@ function LandingPage() {
                                 <SwiperSlide className="max-w-max min-w-fit " ><ServiceSmallCard heading = 'Mobile' /></SwiperSlide>
                             </Swiper>
                         </div>
-                    <div className="flex items-center justify-center gap-[22px] max-w-[840px] mx-auto mt-[22px] flex-col md:flex-row">
-                        <div className="max-w-[420px] w-full h-[250px] sm:h-[270px] bg-cover bg-no-repeat bg-center rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage})`}}  ></div>
-                        <div className="flex-1 ">
+                    <div className="flex items-center justify-center gap-[22px] mt-[22px] flex-col md:flex-row">
+                        <div className=" flex-1 w-full bg-cover bg-no-repeat bg-center h-[340px] rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage})`}}  ></div>
+                        <div className="flex-1 w-full ">
                             <h2 className="text-[22px] text-[#001436] font-[600] ">Data Analytics</h2>
-                            <p className="text-[12px] text-[#001436] mt-[6px] max-w-[400px] line-clamp-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p className="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
                     </div>
-                    <div className="max-w-[1100px] mx-auto mt-[60px] rounded-[20px] bg-[#0D99FF] px-[30px] md:px-[50px] py-[32px] md:py-[42px] flex justify-between gap-[18px] md:gap-[22px] items-center sm:flex-row flex-col ">
+                    <div className="mt-[70px] rounded-[20px] bg-[#0D99FF] px-[30px] md:px-[50px] py-[32px] md:py-[42px] flex justify-between gap-[18px] md:gap-[22px] items-center sm:flex-row flex-col ">
                         <h2 className= "text-[24px] md:text-[35px] text-[#fff] font-[600] sm:text-start text-center line-clamp-2 ">Ready to empower your product vision with us?</h2>
                         <div className="flex items-center gap-[14px] bg-[#FFFFFF] rounded-[7px] px-[22px] py-[12px] cursor-pointer max-w-max">
                             <p className="text-[#0D99FF] text-[15px] font-[500] select-none whitespace-nowrap ">Get Quotes</p>
@@ -342,7 +342,7 @@ function LandingPage() {
                             </div>
                         </div>
                     </div>
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Technology</h2>
+                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[50px] md:mt-[110px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Technology</h2>
                     <div className=" w-full flex items-center overflow-auto py-[22px] gap-[12px] mt-[15px]">
                             <Swiper
                                 slidesPerView={10}
@@ -413,7 +413,7 @@ function LandingPage() {
                             </svg>
                         </button>
                     </div>
-                    <div className="max-w-[1100px] mx-auto ">
+                    <div className="max-w-[1200px] mx-auto mt-[50px] md:mt-[110px] ">
                         <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Awards & Recognitions</h2>
                         <div className="flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
                             <Swiper
@@ -428,8 +428,12 @@ function LandingPage() {
                                         slidesPerView: 5,
                                         
                                     },
-                                    1024: {
+                                    700: {
                                         slidesPerView: 6,
+                                        
+                                    },
+                                    1024: {
+                                        slidesPerView: 8,
                                         
                                     },
                                     1440: {
@@ -479,7 +483,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="w-full bg-[#E8F0FA] ">
-                <div className="max-w-[1100px] mx-auto py-[52px] px-[15px] sm:px-[20px] ">
+                <div className="max-w-[1200px] mx-auto py-[52px] px-[15px] sm:px-[20px] ">
                     <div className="flex items-center justify-center ">
                         <div className="rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[5px] px-[12px] ">
                             <span className="bg-[#0D99FF] rounded-[50px] h-[7px] w-[7px] ">

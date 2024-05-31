@@ -25,7 +25,7 @@ import banner2 from '../assets/Images/image 82803.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import 'swiper/css/pagination';
 // Import Swiper styles
 import 'swiper/css';
 // Import required modules
@@ -33,6 +33,10 @@ import { Autoplay , Navigation } from 'swiper/modules';
 import ClientTesrimonials from '../Components/Cards/ClientTestimonials';
 
 
+import 'swiper/swiper-bundle.css'; // Ensure you have the Swiper CSS
+
+import React, { useRef, useState } from 'react';
+import { Pagination } from 'swiper/modules';
 
 function AboutUs() {
     return (
@@ -94,8 +98,8 @@ function AboutUs() {
            <div className='w-full bg-[#fff] '>
                 <div className='max-w-[1100px] mx-auto flex items-center pt-[50px] lg:pt-[110px] pb-[110px] px-[15px] md:px-[20px] lg:flex-row flex-col '>
                     <div className='flex-1 lg:pr-[120px] '>
-                        <h2 className='text-center text-[#0A0E19] font-[600] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] '>Leading the Digital Transformation in Industry </h2>
-                        <p className=" text-[14px] text-[#0a0e19cd] mt-[11px] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <h2 className=' text-[#0A0E19] font-[600] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] '>Leading the Digital Transformation in Industry </h2>
+                        <p className=" text-[14px] text-[#0a0e19cd] mt-[22px] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                     <div className=' flex sm:flex-1 items-center justify-end sm:max-w-max w-full relative mt-[26px] lg:mt-[0px] '>
                         <img className='h-[340px] sm:h-[390px] md:h-[430px] ' src={banner1} alt="" />
@@ -116,8 +120,16 @@ function AboutUs() {
                                         slidesPerView: 1,
                                         
                                     },
-                                    1024: {
+                                    350: {
+                                        slidesPerView: 1,
+                                        
+                                    },
+                                    700: {
                                         slidesPerView: 2,
+                                        
+                                    },
+                                    1024: {
+                                        slidesPerView: 3,
                                         
                                     },
                                     1440: {
@@ -135,7 +147,8 @@ function AboutUs() {
                                 modules={[ Autoplay]}
                                 className="mySwiper w-full"
                             >
-                                <SwiperSlide className="" ><div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
+                                <SwiperSlide className="!flex items-center justify-center" >
+                                    <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                                         <div className='flex items-center justify-between w-full '>
                                             <p className='text-[#0D99FF] text-[14px] '>01</p>
                                             <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
@@ -146,7 +159,8 @@ function AboutUs() {
                                         <p className='text-[13px] mt-[16px] text-[#ffffffcf] max-w-[80%] leading-6 '>Get smart with the data as we audit, consult, and implement effective data strategies for your business to gain an edge in this data-driven world. Our specialized team will help you digest the abstract data with attractive visualizations and insightful reports.</p>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide className="" ><div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
+                                <SwiperSlide className="!flex items-center justify-center" >
+                                    <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                                     <div className='flex items-center justify-between w-full '>
                                             <p className='text-[#0D99FF] text-[14px] '>02</p>
                                             <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
@@ -157,7 +171,8 @@ function AboutUs() {
                                         <p className='text-[13px] mt-[16px] text-[#ffffffcf] max-w-[80%] leading-6 '>Get smart with the data as we audit, consult, and implement effective data strategies for your business to gain an edge in this data-driven world. Our specialized team will help you digest the abstract data with attractive visualizations and insightful reports.</p>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide className="" ><div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
+                                <SwiperSlide className="!flex items-center justify-center" >
+                                    <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                                     <div className='flex items-center justify-between w-full '>
                                             <p className='text-[#0D99FF] text-[14px] '>03</p>
                                             <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
@@ -168,7 +183,8 @@ function AboutUs() {
                                         <p className='text-[13px] mt-[16px] text-[#ffffffcf] max-w-[80%] leading-6 '>Get smart with the data as we audit, consult, and implement effective data strategies for your business to gain an edge in this data-driven world. Our specialized team will help you digest the abstract data with attractive visualizations and insightful reports.</p>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide className="" ><div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
+                                <SwiperSlide className="!flex items-center justify-center" >
+                                    <div className='bg-[#10335A] rounded-[20px] px-[22px] py-[22px] max-w-[320px] w-full ' >
                                     <div className='flex items-center justify-between w-full '>
                                             <p className='text-[#0D99FF] text-[14px] '>04</p>
                                             <div className='bg-[#0D99FF] rounded-[12px] h-[52px] w-[52px] '>
@@ -186,69 +202,75 @@ function AboutUs() {
            </div>
            <div className='w-full bg-[#fff] ' >
                 <div className='max-w-[1100px] mx-auto py-[42px] px-[12px] md:px-[20px] '>
-                    <h2 className="text-center text-[#0A0E19] font-[600] mt-[65px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] ">Awards & Recognitions</h2>
-                    <div className="flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
-                        <Swiper
-                            slidesPerView={8}
-                            navigation={{
-                                nextEl: '.swiper-button-next-award',
-                                prevEl: '.swiper-button-prev-award',
-                              }}
-                            breakpoints={{
-                                
-                                100: {
-                                    slidesPerView: 5,
+                <div className="max-w-[1100px] mx-auto mt-[50px] md:mt-[110px] ">
+                        <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Awards & Recognitions</h2>
+                        <div className="flex items-center justify-center gap-[18px] mt-[30px] flex-wrap ">
+                            <Swiper
+                                slidesPerView={8}
+                                navigation={{
+                                    nextEl: '.swiper-button-next-Awards',
+                                    prevEl: '.swiper-button-prev-Awards',
+                                  }}
+                                breakpoints={{
                                     
-                                },
-                                1024: {
-                                    slidesPerView: 6,
-                                    
-                                },
-                                1440: {
-                                    slidesPerView: 9,
-                                    
-                                },
+                                    100: {
+                                        slidesPerView: 5,
+                                        
+                                    },
+                                    700: {
+                                        slidesPerView: 6,
+                                        
+                                    },
+                                    1024: {
+                                        slidesPerView: 8,
+                                        
+                                    },
+                                    1440: {
+                                        slidesPerView: 9,
+                                        
+                                    },
+                                    }}
+                                spaceBetween={10}
+                                centeredSlides={true}
+                                autoplay={{
+                                delay: 1900,
+                                disableOnInteraction: false,
                                 }}
-                            spaceBetween={10}
-                            centeredSlides={true}
-                            autoplay={{
-                            delay: 1900,
-                            disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            modules={[ Autoplay , Navigation]}
-                            className="mySwiper w-full"
-                        >
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg1} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg2} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg3} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg5} alt="" /></SwiperSlide>
-                            <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg6} alt="" /></SwiperSlide>
-                        </Swiper>
+                                loop={true}
+                                modules={[ Autoplay , Navigation]}
+                                className="mySwiper w-full"
+                            >
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg1} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg2} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg3} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg4} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg5} alt="" /></SwiperSlide>
+                                <SwiperSlide className="max-w-max min-w-fit " ><img className="h-[100px] sm:h-[110px] lg:h-[126px] mr-[12px] " src={awardImg6} alt="" /></SwiperSlide>
+                            </Swiper>
+                        </div>
                     </div>
                     <div className=" flex items-center justify-center gap-[8px] mt-[32px] ">
-                        <button className="swiper-button-prev-award flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
+                        <button className="swiper-button-prev-Awards flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7H1V9H21V7Z" fill="#0D99FF"/>
                             </svg>  
                         </button>
-                        <button className="swiper-button-next-award flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
+                        <button className="swiper-button-next-Awards flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
                             <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20.7071 7.29289C21.0976 7.68342 21.0976 8.31658 20.7071 8.70711L14.3431 15.0711C13.9526 15.4616 13.3195 15.4616 12.9289 15.0711C12.5384 14.6805 12.5384 14.0474 12.9289 13.6569L18.5858 8L12.9289 2.34315C12.5384 1.95262 12.5384 1.31946 12.9289 0.928932C13.3195 0.538408 13.9526 0.538408 14.3431 0.928932L20.7071 7.29289ZM0 7H20V9H0V7Z" fill="white"/>
                             </svg>
                         </button>
                     </div>
                 </div>
-                <div className='max-w-[1100px] mx-auto mt-[72px] px-[12px] sm:px-[20px] '>
+                <div className='max-w-[1100px] mx-auto mt-[20px] md:mt-[72px] px-[12px] sm:px-[20px] '>
                     <h2 className=' text-[#0A0E19] font-[600] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] '>Challenging proven cultures</h2>
                     <p className='mt-[60px] text-[13px] text-[#0A0E19] '>We don’t entertain barricades in communication and every conversation flows endlessly through the floor</p>
                     <div className='mt-[22px] flex items-center gap-[22px] md:flex-row flex-col '>
@@ -303,21 +325,38 @@ function AboutUs() {
                 <div className='max-w-[1100px] mx-auto py-[32px] px-[12px] md:px-[20px] '>
                     <div className='mt-[32px] flex items-center justify-between gap-[22px] sm:flex-row flex-col '>
                         <h2 className=' text-[#0A0E19] font-[600] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] '>Client Testimonials</h2>
-                        <div className="flex items-center justify-center gap-[8px] ">
-                            <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer rounded-[12px] border border-[#0D99FF] ">
+                        <div className=" flex items-center justify-center gap-[8px] ">
+                            <button className="swiper-button-prev-blog1 flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                                 <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7H1V9H21V7Z" fill="#0D99FF"/>
                                 </svg>  
-                            </span>
-                            <span className="flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
+                            </button>
+                            <button className="swiper-button-next-blog1 flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#0D99FF] rounded-[12px] border border-[#0D99FF] ">
                                 <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.7071 7.29289C21.0976 7.68342 21.0976 8.31658 20.7071 8.70711L14.3431 15.0711C13.9526 15.4616 13.3195 15.4616 12.9289 15.0711C12.5384 14.6805 12.5384 14.0474 12.9289 13.6569L18.5858 8L12.9289 2.34315C12.5384 1.95262 12.5384 1.31946 12.9289 0.928932C13.3195 0.538408 13.9526 0.538408 14.3431 0.928932L20.7071 7.29289ZM0 7H20V9H0V7Z" fill="white"/>
                                 </svg>
-                            </span>
+                            </button>
                         </div>
                     </div>
                     <div className='pt-[30px] '>
-                        <ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} />
+                    <Swiper
+                    spaceBetween={12}
+                    navigation={{
+                        nextEl: '.swiper-button-next-blog1',
+                        prevEl: '.swiper-button-prev-blog1',
+                      }}
+                    autoplay={{
+                        delay: 1900,
+                        disableOnInteraction: false,
+                        }}
+                    pagination={true} modules={[Pagination , Autoplay , Navigation ]}
+                    
+                    className="mySwiper !pb-[80px] ">
+                        <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                        <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                        <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                        <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                    </Swiper>
                     </div>
                 </div>
            </div>

@@ -10,7 +10,7 @@ function ReviewCard() {
     return (
         <>
             <div className="flex items-center justify-center gap-[22px] flex-wrap ">
-                <div className="w-[300px] rounded-[8px] px-[22px] py-[22px] border border-[#CECDD1] ">
+                <div className="w-[300px] rounded-[8px] px-[22px] py-[22px] border border-[#CECDD1] review_card ">
                     <div className=" flex items-center gap-[5px] justify-center  ">
                         <RatingStar/>
                         <RatingStar/>

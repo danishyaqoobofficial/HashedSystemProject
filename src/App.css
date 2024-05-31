@@ -16,8 +16,11 @@
         flex-direction: column;
     }
 }
-
-
+@media (max-width: 340px) {
+    .review_card{
+        width: 100%;
+    }
+}
 .stories__after ::after{
 height: 100%;
 width: 1px;
@@ -28,3 +31,4 @@ top: 56%;
 left: 50%;
 transform: translateX(50%);
 } 
+
