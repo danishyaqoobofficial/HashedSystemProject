@@ -33,6 +33,7 @@ import { Pagination } from 'swiper/modules';
 function Header() {
 
     const [toggltSideNav, setToggltSideNav] =  useState(false)
+    const [headerBar, setHeaderBar] =  useState(false)
 
     return (
         <>
@@ -77,7 +78,7 @@ function Header() {
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
                                 </div>
                             </Link>
-                            <div className="flex items-center justify-center px-[22px] py-[9px] bg-[#0D99FF] rounded-[7px] text-[14px] lg:text-[15px] text-[#fff] cursor-pointer select-none font-[400] ">
+                            <div className="flex items-center justify-center px-[22px] py-[9px] bg-[#0D99FF] rounded-[7px] text-[14px] lg:text-[15px] text-[#fff] cursor-pointer select-none font-[400] " onClick={ () => setHeaderBar (!headerBar) } >
                                 Get Quotes
                             </div>
                         </div>
@@ -87,7 +88,7 @@ function Header() {
                             <Hamburger/>
                         </span>
                     </div>
-                    {/* <div className=" w-[100%] right-0 left-0 absolute bg-[#fff] flex top-[72px] shadow-md items-start rounded-b-[20px] p-[42px] gap-[10px] ">
+                    <div className={` w-[100%] right-0 left-0 absolute bg-[#fff] flex top-[72px] shadow-md items-start rounded-b-[20px] p-[42px] gap-[10px] ${headerBar ? "block" : "hidden"} `}>
                         <div className="">
                             <Swiper
                                 spaceBetween={12}
@@ -135,7 +136,7 @@ function Header() {
                                 <p className="text-[#0A0E19] text-[13px] font-[400] ">UI/UX Deign</p>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
                 <div className={`bg-[#fff] w-[220px] fixed  top-0 pb-[22px] h-[100%] transition-all z-50 ${toggltSideNav ? "right-0" : "-right-full"} `}>
                     <div className="flex items-center gap-[28px] lg:gap-[44px] flex-col justify-center h-full ">
