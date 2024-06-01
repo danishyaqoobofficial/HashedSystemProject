@@ -31,7 +31,6 @@ import 'swiper/swiper-bundle.css'; // Ensure you have the Swiper CSS
 import { Pagination } from 'swiper/modules';
 
 
-
 function Header() {
 
     const [toggltSideNav, setToggltSideNav] =  useState(false)
