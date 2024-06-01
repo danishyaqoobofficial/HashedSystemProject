@@ -15,7 +15,6 @@ import headerSlider4 from '../../assets/Images/product 1.png'
 import headerSlider5 from '../../assets/Images/laravel-logo 1.png'
 
 
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/pagination';
 // Import Swiper styles
