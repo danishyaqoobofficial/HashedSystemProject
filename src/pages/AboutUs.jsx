@@ -429,7 +429,7 @@ function AboutUs() {
                 <div className="max-w-[1200px] mx-auto py-[50px] px-[12px] md:px-[20px] ">
                     <h2 className=" text-center text-[#0A0E19] font-[600] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] max-w-[660px] mx-auto ">Have a project? Let's discuss</h2>
                     <p className=" text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this form, expect to hear back from us within 24 hours.</p>
-                    <div className="flex items-center gap-[12px] mt-[26px] flex-col lg:flex-row ">
+                    <div className="flex items-center gap-[12px] mt-[36px] flex-col lg:flex-row ">
                         <div className="flex items-center gap-[12px] w-full flex-col sm:flex-row ">
                             <FormLableInput lable = 'Phone *' placeholder = 'Your Name' htmlFor = 'Your Name' id = 'Your Name' type = 'text' />
                             <FormLableInput lable = 'Your Phone *' placeholder = 'Your Phone' htmlFor = 'Your Phone' id = 'Your Phone' type = 'text' />
