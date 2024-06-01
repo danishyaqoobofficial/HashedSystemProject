@@ -12,6 +12,9 @@ import LandingPage from './pages/Home';
 import Footer from './Components/Footer/Footer';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import ServiceDetails from './pages/ServiceDetails';
+import Portfolio from './pages/Portfolio';
+import Blogs from './pages/Blogs';
 
 
 function App() {
@@ -40,6 +43,18 @@ const router = createBrowserRouter(
         {
           path : '/about',
           element : <AboutUs/>
+        },
+        {
+          path : '/service-details',
+          element : <ServiceDetails/>
+        },
+        {
+          path : '/portfolio',
+          element : <Portfolio/>
+        },
+        {
+          path : '/blogs',
+          element : <Blogs/>
         },
         {
           path : '/contact',

@@ -79,9 +79,9 @@ function ContactUs() {
                         </div>
                         <textarea className=' mt-[18px] border-[1px] w-full border-[#ced7e4d6] rounded-[7px] text-[#7F8998] text-[14px] flex-1 outline-none px-[18px] py-[10px] resize-none ' name="" id="" cols="30" rows="10"></textarea>
                         <div className='flex items-center gap-[7px] mt-[6px] '>
-                            <input className=' '  type="checkbox" />
+                            <input id='checkbox' type="checkbox"/>
                             <div className='flex items-center gap-[4px] '>
-                                <p className='text-[12px] text-[#000000] font-[300] cursor-default '>I agree to all the</p>
+                                <label htmlFor='checkbox' className='text-[12px] select-none text-[#000000] font-[300] cursor-default '>I agree to all the</label>
                                 <p className='text-[12px] text-[#000000] font-[300] cursor-pointer border-b border-[#000000] leading-[14px] '>Terms & Conditons</p>
                             </div>
                         </div>

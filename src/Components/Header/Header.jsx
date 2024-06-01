@@ -55,19 +55,19 @@ function Header() {
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
                                 </div>
                             </Link>
-                            <Link to={`/`}>
+                            <Link to={`/service-details`}>
                                 <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                                 Services
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
                                 </div>
                             </Link>
-                            <Link to={`/`}>
+                            <Link to={`/portfolio`}>
                                 <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                                 portfolio
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
                                 </div>
                             </Link>
-                            <Link to={`/`}>
+                            <Link to={`/blogs`}>
                                 <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                                 Blogs
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
@@ -89,7 +89,7 @@ function Header() {
                             <Hamburger/>
                         </span>
                     </div>
-                    <div className=" w-[100%] right-0 left-0 absolute bg-[#fff] flex top-[72px] shadow-md items-start rounded-b-[20px] p-[42px] gap-[10px] ">
+                    {/* <div className=" w-[100%] right-0 left-0 absolute bg-[#fff] flex top-[72px] shadow-md items-start rounded-b-[20px] p-[42px] gap-[10px] ">
                         <div className="">
                             <Swiper
                                 spaceBetween={12}
@@ -137,7 +137,7 @@ function Header() {
                                 <p className="text-[#0A0E19] text-[13px] font-[400] ">UI/UX Deign</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={`bg-[#fff] w-[220px] fixed  top-0 pb-[22px] h-[100%] transition-all z-50 ${toggltSideNav ? "right-0" : "-right-full"} `}>
                     <div className="flex items-center gap-[28px] lg:gap-[44px] flex-col justify-center h-full ">
@@ -156,7 +156,7 @@ function Header() {
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
                                 </div>
                             </Link>
-                            <Link to={`/`}>
+                            <Link to={`/service-details`}>
                                 <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                                 Services
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
@@ -174,7 +174,7 @@ function Header() {
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
                                 </div>
                             </Link>
-                            <Link to={`/`}>
+                            <Link to={`/contact`}>
                                 <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
                                 Contact Us
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
