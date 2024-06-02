@@ -18,6 +18,9 @@
     .finish_padding{
         padding-bottom: 0px !important;
     }
+    .full_width{
+        width: 100% !important;
+    }
 }
 @media (max-width: 340px) {
     .review_card{
@@ -37,14 +40,14 @@
     }
 }
 .stories__after ::after{
-height: 100%;
-width: 1px;
-background-color: #8AAAD2;
-content: '';
-position: absolute;
-top: 56%;
-left: 50%;
-transform: translateX(50%);
+    height: 100%;
+    width: 1px;
+    background-color: #8AAAD2;
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translateX(50%);
 } 
 .transorm_translate{
     transform: translate(-50% , -50% );
@@ -56,3 +59,4 @@ transform: translateX(50%);
 .lllll:hover  .lll{
     display: block;
 }
+

@@ -53,7 +53,7 @@ function LandingPage() {
     return (
         <>
             <main className="bg-[#E8F0FA] w-full ">
-                <section className="max-w-[1200px] mx-auto pt-[30px] md:pt-[60px] xl:pt-[80px] flex gap-[18px] md:gap-[22px] px-[15px] sm:px-[20px] lg:flex-row flex-col ">
+                <section className="max-w-[1200px] mx-auto pt-[30px] md:pt-[60px] xl:pt-[80px] flex gap-[18px] md:gap-[22px] px-[15px] md:px-[20px] lg:flex-row flex-col ">
                     <div className="flex-1 pt-[32px] ">
                         <h2 className="text-[32px] sm:text-[42px] md:text-[60px] text-[#001436] font-[600] text-start leading-[48px] md:leading-[70px] line-clamp-3 ">Software Development & IT Company</h2>
                         <p className="text-[#0D99FF] text-[24px] sm:text-[28px] md:text-[32px] mt-[14px] font-[600] text-start line-clamp-1 ">in Dubai - Hashed System</p>
@@ -106,7 +106,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="bg-[#fff] py-[42px] ">
-                <div className="max-w-[1200px] mx-auto flex items-center gap-[12px] md:gap-[32px] justify-between sm:flex-row flex-col px-[15px] sm:px-[20px]  ">
+                <div className="max-w-[1200px] mx-auto flex items-center gap-[12px] md:gap-[32px] justify-between sm:flex-row flex-col px-[15px] md:px-[20px]  ">
                     <div className=" flex-1 ">
                         <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] sm:text-start ">Our Valued Clients</h2>
                         <p className="text-[12px] md:text-[13px] mt-[9px] text-center sm:text-start text-[#001436] ">Build seamless mobile apps with Flutter. Its layered architecture enables flexible designs and high-speed rendering, allowing us to focus on optimized user experiences. Flutter empowers us to deliver customized front-end and back-end mobile solutions.</p>
@@ -123,7 +123,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="bg-[#E8F0FA] py-[44px] w-full ">
-                <div className="max-w-[1200px] mx-auto px-[15px] sm:px-[20px] ">
+                <div className="max-w-[1200px] mx-auto px-[15px] md:px-[20px] ">
                     <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Our Services</h2>
                     <div className="mt-[22px] bg-[#0D99FF] rounded-[20px] p-[30px] flex gap-[42px] items-center flex-col-reverse sm:flex-row ">
                         <div className="flex-[3] ">
@@ -164,7 +164,7 @@ function LandingPage() {
             </div>
             <div className="bg-[#fff] w-full ">
                 <div className="max-w-[1200px] mx-auto">
-                    <div className=" py-[52px] px-[15px] sm:px-[20px] ">
+                    <div className=" py-[52px] px-[15px] md:px-[20px] ">
                         <div className="flex items-center justify-center ">
                             <div className="rounded-[12px] bg-[#E1ECFF] flex items-center gap-[4px] py-[6px] px-[9px] ">
                                 <span className="bg-[#0D99FF] rounded-[50px] h-[7px] w-[7px] ">
@@ -551,7 +551,7 @@ function LandingPage() {
                 <div className="max-w-[1200px] mx-auto py-[50px] px-[15px] md:px-[20px] ">
                     <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  max-w-[660px] mx-auto ">Have a project? Let's discuss</h2>
                     <p className=" text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this form, expect to hear back from us within 24 hours.</p>
-                    <div className="flex items-center gap-[12px] mt-[36px] flex-col lg:flex-row ">
+                    <div className="flex items-center gap-[12px] mt-[26px] flex-col lg:flex-row ">
                         <div className="flex items-center gap-[12px] w-full flex-col sm:flex-row ">
                             <FormLableInput lable = 'Phone *' placeholder = 'Your Name' htmlFor = 'Your Name' id = 'Your Name' type = 'text' />
                             <FormLableInput lable = 'Your Phone *' placeholder = 'Your Phone' htmlFor = 'Your Phone' id = 'Your Phone' type = 'text' />

@@ -4,7 +4,7 @@
 function ClientTesrimonials(props) {
     return (
         <>
-            <div className= " max-w-[1100px] mx-auto bg-[#11335A] rounded-[20px] px-[38px] md:px-[62px] py-[30px] md:py-[46px] flex gap-[42px] md:flex-row flex-col md:items-start items-center " >
+            <div className= " max-w-[1200px] mx-auto bg-[#11335A] rounded-[20px] px-[38px] md:px-[62px] py-[30px] md:py-[46px] flex gap-[42px] md:flex-row flex-col md:items-start items-center " >
                 <div className="rounded-[50px] h-[220px] w-[220px] bg-cover bg-no-repeat bg-center " style={{backgroundImage : `url(${props.bgImage})` }} ></div>
                 <div className="flex-1 ">
                     <img className="h-[23px] " src={props.titleImage} alt="" />

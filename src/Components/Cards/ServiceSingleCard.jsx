@@ -6,11 +6,11 @@ function ServiceSingleCard(props) {
     return (
         <>
             <div className="mt-[18px] w-full px-[18px] md:px-[32px] py-[9px] rounded-[20px] border-[0.7px] border-[#CECDD1] flex items-center bg-[#fff] gap-[12px] sm:gap-[18px] md:gap-[28px] overflow-auto sm:flex-row flex-col ">
-                <div className="flex items-center justify-start gap-[18px] md:gap-[28px] w-full ">
+                <div className="flex items-center justify-start gap-[18px] md:gap-[28px] flex-1 full_width ">
                     <img className='max-h-[100px] max-w-[90px] ' src={props.image} alt="" />
                     <h3 className='text-start leading-6 text-[18px] flex-1 '>{props.title}</h3>
                 </div>
-                <div className="flex items-center gap-[18px] md:gap-[28px] ">
+                <div className="flex items-center gap-[18px] md:gap-[28px] flex-[3] ">
                     <p className='text-[14px] text-[#001436] text-start flex-[5] line-clamp-3 '>{props.peragraph}</p>
                     <div className='bg-[#ABDCFF] cursor-pointer rounded-[50px] p-[9px] flex items-center justify-center '>
                         <svg width="13" height="13" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
