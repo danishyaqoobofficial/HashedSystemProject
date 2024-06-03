@@ -88,9 +88,9 @@ function Header() {
                             <Hamburger/>
                         </span>
                     </div>
-                    <div className="px-[15px] w-[100%] right-0 left-0 absolute z-50 top-[72px]  ">
-                        <div className={`  bg-[#fff] flex shadow-md items-start rounded-b-[20px] p-[18px] md:p-[42px] gap-[10px] flex-wrap ${headerBar ? "block" : "hidden"} `}>
-                            <div className=" flex items-center justify-center flex-1 ">
+                    <div className="px-[15px] w-[100%] right-0 left-0 absolute z-50 top-[72px] min-h-[100vh] overflow-auto  ">
+                        <div className={`  bg-[#fff] flex shadow-md items-start rounded-b-[20px] p-[18px] md:p-[42px] gap-[10px] sm:flex-row flex-col-reverse ${headerBar ? "block" : "hidden"} `}>
+                            <div className=" flex items-center justify-center w-full sm:flex-1 mt-[22px] sm:mt-[0px] ">
                                 <Swiper
                                     spaceBetween={12}
                                     autoplay={{
@@ -108,31 +108,31 @@ function Header() {
                                 </Swiper>
                             </div>
                             <div className="flex-[2] sm:px-[20px] flex flex-wrap gap-[10px] ">
-                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all max-w-max sm:w-[280px] ">
+                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all w-full sm:w-[280px] ">
                                     <img className="h-[40px] " src={headerSlider1} alt="" />
                                     <p className="text-[#0A0E19] text-[13px] whitespace-nowrap font-[400] ">Django - Python Application</p>
                                 </div>
-                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all max-w-max sm:w-[280px] ">
+                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all w-full sm:w-[280px] ">
                                     <img className="h-[40px] " src={headerSlider2} alt="" />
                                     <p className="text-[#0A0E19] text-[13px] whitespace-nowrap font-[400] ">Mobile Application (Flutter)</p>
                                 </div>
-                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all max-w-max sm:w-[280px] ">
+                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all w-full sm:w-[280px] ">
                                     <img className="h-[40px] " src={headerSlider5} alt="" />
                                     <p className="text-[#0A0E19] text-[13px] whitespace-nowrap font-[400] ">Laravel - PHP Application</p>
                                 </div>
-                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all max-w-max sm:w-[280px] ">
+                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all w-full sm:w-[280px] ">
                                     <img className="h-[40px] " src={headerSlider4} alt="" />
                                     <p className="text-[#0A0E19] text-[13px] whitespace-nowrap font-[400] ">Product Development</p>
                                 </div>
-                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all max-w-max sm:w-[280px] ">
+                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all w-full sm:w-[280px] ">
                                     <img className="h-[40px] " src={headerSlider3} alt="" />
                                     <p className="text-[#0A0E19] text-[13px] whitespace-nowrap font-[400] ">WordPress Development</p>
                                 </div>
-                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all max-w-max sm:w-[280px] ">
+                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all w-full sm:w-[280px] ">
                                     <img className="h-[40px] " src={headerSlider3} alt="" />
                                     <p className="text-[#0A0E19] text-[13px] whitespace-nowrap font-[400] ">SEO/Digital Marketing</p>
                                 </div>
-                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all max-w-max sm:w-[280px] ">
+                                <div className="flex items-center gap-[7px] px-[16px] cursor-default py-[10px] rounded-[16px] hover:bg-[#E8F0FA] transition-all w-full sm:w-[280px] ">
                                     <img className="h-[40px] " src={headerSlider3} alt="" />
                                     <p className="text-[#0A0E19] text-[13px] whitespace-nowrap font-[400] ">UI/UX Deign</p>
                                 </div>
