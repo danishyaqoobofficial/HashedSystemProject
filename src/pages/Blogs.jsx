@@ -33,8 +33,8 @@ function Blogs() {
                 <img className=' absolute bottom-0 right-[30px] z-0 ' src={img2} alt="" />
            </section>
            <main className=' w-full bg-[#fff] ' >
-                <div className='max-w-[1200px] mx-auto px-[15px] md:px-[20px] relative py-[32px] '>
-                    <div className='  w-full border border-[#CECDD1] rounded-[20px] overflow-hidden flex -translate-y-[30%] md:-translate-y-[50%] md:flex-row flex-col '>
+                <div className='max-w-[1200px] mx-auto px-[15px] md:px-[20px] relative pb-[32px] pt-[460px] md:pt-[340px] '>
+                    <div className=' w-[97%] mx-auto border border-[#CECDD1] rounded-[20px] overflow-hidden flex absolute md:flex-row flex-col -top-[130px] right-0 left-0 '>
                         <div className='h-[250px] sm:h-[320px] md:h-[400px] md:flex-1 w-full bg-cover bg-no-repeat bg-center'  style={{backgroundImage : `url(${img3})`}} ></div>
                         <div className='pb-[32px] md:pt-[50px] pt-[26px] px-[22px] md:max-w-[370px] w-full bg-[#fff]  '>
                             <div className=' w-full flex items-center justify-between gap-[22px] '>
