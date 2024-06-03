@@ -15,6 +15,7 @@ import bg7 from '../assets/Images/bg7.png'
 
 
 import BlogCard from '../Components/Cards/BlogCard'
+import { Link } from 'react-router-dom'
 
 
 
@@ -55,20 +56,15 @@ function Blogs() {
                         </div>
                     </div>
                     <div className='flex items-center gap-[14px] md:flex-row flex-col '>
-                        <BlogCard bg = {bg2} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
-                        <BlogCard bg = {bg3} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
-                        <BlogCard bg = {bg4} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <BlogCard bg = {bg2} date = '28 May 2024' heading = 'Concierge Bookings' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <BlogCard bg = {bg3} date = '28 May 2024' heading = 'Concierge Bookings' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <BlogCard bg = {bg4} date = '28 May 2024' heading = 'Concierge Bookings' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
                     </div>
                     <div className='flex items-center gap-[14px] mt-[82px] md:flex-row flex-col '>
-                        <BlogCard bg = {bg1} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <BlogCard bg = {bg1} date = '28 May 2024' heading = 'What is agile software development?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
                         <BlogCard bg = {bg} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
                     </div>
-                    <div className='flex items-center gap-[22px] mt-[82px] md:flex-row flex-col '>
-                        <BlogCard bg = {bg5} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
-                        <BlogCard bg = {bg6} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
-                        <BlogCard bg = {bg7} date = '28 May 2024' heading = 'How to Assess a Mobile Application’s Value?' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
-                    </div>
-                    <div className='  w-full border border-[#CECDD1] rounded-[20px] overflow-hidden flex mt-[82px] md:flex-row flex-col '>
+                    <Link to={`/blog-details`} className='  w-full border border-[#CECDD1] rounded-[20px] overflow-hidden flex mt-[82px] md:flex-row flex-col '>
                         <div className='h-[250px] sm:h-[320px] md:h-[400px] md:flex-1 w-full bg-cover bg-no-repeat bg-center'  style={{backgroundImage : `url(${img4})`}} ></div>
                         <div className='pb-[32px] md:pt-[50px] pt-[26px] px-[22px] md:max-w-[370px] w-full bg-[#fff]  '>
                             <div className=' w-full flex items-center justify-between gap-[22px] '>
@@ -87,6 +83,11 @@ function Blogs() {
                                 </div>
                             </div>
                         </div>
+                    </Link>
+                    <div className='flex items-center gap-[22px] mt-[82px] md:flex-row flex-col '>
+                        <BlogCard bg = {bg5} date = '28 May 2024' heading = 'Concierge Bookings' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <BlogCard bg = {bg6} date = '28 May 2024' heading = 'Concierge Bookings' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <BlogCard bg = {bg7} date = '28 May 2024' heading = 'Concierge Bookings' peragraph = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
                     </div>
                 </div>
            </main>

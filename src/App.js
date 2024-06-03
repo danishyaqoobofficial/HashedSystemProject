@@ -15,6 +15,7 @@ import ContactUs from './pages/ContactUs';
 import ServiceDetails from './pages/ServiceDetails';
 import Portfolio from './pages/Portfolio';
 import Blogs from './pages/Blogs';
+import BlogDetails from './pages/BlogDetails';
 
 
 function App() {
@@ -55,6 +56,10 @@ const router = createBrowserRouter(
         {
           path : '/blogs',
           element : <Blogs/>
+        },
+        {
+          path : '/blog-details',
+          element : <BlogDetails/>
         },
         {
           path : '/contact',

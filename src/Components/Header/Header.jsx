@@ -88,13 +88,13 @@ function Header() {
                             <Hamburger/>
                         </span>
                     </div>
-                    <div className="px-[15px] w-[100%] right-0 left-0 absolute z-50 top-[72px] min-h-[100vh] overflow-auto  ">
-                        <div className={`  bg-[#fff] flex shadow-md items-start rounded-b-[20px] p-[18px] md:p-[42px] gap-[10px] sm:flex-row flex-col-reverse ${headerBar ? "block" : "hidden"} `}>
+                    <div className="px-[15px] w-[100%] right-0 left-0 absolute z-50 top-[72px] overflow-auto pb-[20px]  ">
+                        <div className={`  bg-[#fff] flex shadowHigh items-start rounded-b-[20px] p-[18px] md:p-[42px] gap-[10px] sm:flex-row flex-col-reverse ${headerBar ? "block" : "hidden"} `}>
                             <div className=" flex items-center justify-center w-full sm:flex-1 mt-[22px] sm:mt-[0px] ">
                                 <Swiper
                                     spaceBetween={12}
                                     autoplay={{
-                                        delay: 1900,
+                                        delay: 1400,
                                         disableOnInteraction: false,
                                         }}
                                     pagination={true} modules={[Pagination , Autoplay , Navigation ]}
