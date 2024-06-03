@@ -11,6 +11,12 @@ import projectCardImage4 from '../assets/Images/image 82789.png'
 function Portfolio() {
     return (
         <>
+            <section className="w-full bg-[#062345] ">
+                <div className="max-w-[900px] w-[90%] md:w-full mx-auto py-[120px] px-[15px] md:px-[20px] ">
+                    <h2 className="text-[34px] sm:text-[42px] md:text-[55px] font-[600] text-[#fff] text-center ">Portfolio</h2>
+                    <p className=" text-[14px] sm:text-[16px] md:text-[18px] text-[#fff] text-center font-[300] mt-[12px] ">Hashed System is a leading software development company in Dubai offering custom solutions. We aim to deliver innovative technology products that bring client satisfaction.</p>
+                </div>
+           </section>
             <main className="bg-[#fff] w-full">
                 <div className="flex items-center justify-center sm:justify-between py-[32px] max-w-[1200px] mx-auto px-[15px] md:px-[20px] sm:flex-row flex-col gap-[16px] " >
                     <div className="flex items-center gap-[9px] md:gap-[12px] flex-wrap justify-center ">
