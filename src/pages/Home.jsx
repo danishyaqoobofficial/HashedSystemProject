@@ -79,13 +79,17 @@ function LandingPage() {
             </main>
             <div className="bg-[#1E4470] w-full py-[22px] ">
                 <div className="flex gap-[22px] lg:gap-[30px] justify-center flex-wrap ">
-                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border1" data-aos="slide-right">
-                        <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">30+ projects</h2>
-                        <p className="text-[11px] md:text-[12px] text-[#FFFFFF] text-center ">successfully delivered</p>
+                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border1" >
+                       <div data-aos="slide-right">
+                            <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">30+ projects</h2>
+                            <p className="text-[11px] md:text-[12px] text-[#FFFFFF] text-center ">successfully delivered</p>
+                       </div>
                     </div>
-                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border" data-aos="slide-up">
-                        <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">25 Members</h2>
-                        <p className="text-[11px] md:text-[12px] text-[#FFFFFF] text-center ">in-house collaborators</p>
+                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border" >
+                        <div data-aos="slide-up">
+                            <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">25 Members</h2>
+                            <p className="text-[11px] md:text-[12px] text-[#FFFFFF] text-center ">in-house collaborators</p>
+                        </div>
                     </div>
                     <div className="px-[42px] py-[8px]" data-aos="slide-left">
                         <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300]">Locations</h2>
@@ -114,11 +118,11 @@ function LandingPage() {
             </div>
             <div className="bg-[#fff] py-[42px] ">
                 <div className="max-w-[1200px] mx-auto flex items-center gap-[12px] md:gap-[32px] justify-between sm:flex-row flex-col px-[15px] md:px-[20px]  ">
-                    <div className=" flex-1 ">
+                    <div className=" flex-1 " data-aos="zoom-in-down" >
                         <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] sm:text-start ">Our Valued Clients</h2>
                         <p className="text-[12px] md:text-[13px] mt-[9px] text-center sm:text-start text-[#001436] ">Build seamless mobile apps with Flutter. Its layered architecture enables flexible designs and high-speed rendering, allowing us to focus on optimized user experiences. Flutter empowers us to deliver customized front-end and back-end mobile solutions.</p>
                     </div>
-                    <div className="flex items-center gap-[12px] md:gap-[16px] flex-wrap flex-1 justify-center mt-[15px] sm:mt-[0px] ">
+                    <div className="flex items-center gap-[12px] md:gap-[16px] flex-wrap flex-1 justify-center mt-[15px] sm:mt-[0px] " data-aos="zoom-in-left">
                         <img className="h-[56px] w-[110px] " src={img1} alt="" />
                         <img className="h-[56px] w-[110px] " src={img2} alt="" />
                         <img className="h-[56px] w-[110px] " src={img3} alt="" />
@@ -133,7 +137,7 @@ function LandingPage() {
                 <div className="max-w-[1200px] mx-auto px-[15px] md:px-[20px] ">
                     <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Our Services</h2>
                     <div className="mt-[22px] bg-[#0D99FF] rounded-[20px] p-[30px] flex gap-[42px] items-center flex-col-reverse sm:flex-row ">
-                        <div className="flex-[3] " data-aos="slide-right">
+                        <div className="flex-[3] " data-aos="slide-up">
                             <h2 className="text-[#fff] font-[500] text-[24px] md:text-[28px] text-start ">Django - Python Application</h2>
                             <p className="text-[12px] sm:text-[13px] text-[#FFFFFF] text-start mt-[12px] line-clamp-4 ">Build seamless mobile apps with Flutter. Its layered architecture enables flexible designs and high-speed rendering, allowing us to focus on optimized user experiences. Flutter empowers us to deliver customized front-end and back-end mobile solutions.</p>
                             <div className="rounded-[7px] bg-[#fff] px-[22px] py-[10px] cursor-pointer flex items-center justify-center text-[#0D99FF] font-[600] text-[13px] uppercase max-w-max mt-[22px] ">
@@ -142,7 +146,7 @@ function LandingPage() {
                         </div>
                         <div className="flex-[2] flex items-center justify-center  ">
                             <div>
-                                <img className=" " src={img8} alt="" />
+                                <img data-aos="flip-left" className=" " src={img8} alt="" />
                                 <div className= " hidden sm:block">
                                     <div className="flex items-center justify-end ">
                                         <div className="bg-[#ABDCFF] rounded-[50px] h-[32px] w-[32px] flex items-center justify-center ">
@@ -155,10 +159,10 @@ function LandingPage() {
                             </div>
                         </div>
                     </div>
-                    <ServiceSingleCard image = {image1} title = 'Mobile Application (Flutter)' peragraph = 'Develop custom web applications with Laravel clean, expressive code. As a PHP framework, it enables the rapid development of robust web apps.' />
-                    <ServiceSingleCard image = {image2} title = 'Laravel - PHP Application' peragraph = 'Build stunning websites and apps with WordPress, the leading open-source CMS. Its elegant architecture makes it our go-to for crafting customized.' />
-                    <ServiceSingleCard image = {image3} title = 'Product Development' peragraph = 'Bring your product vision to life with our expert team. We develop innovative software products using the latest technologies to meet your requirements.' />
-                    <ServiceSingleCard image = {image4} title = 'WordPress Development' peragraph = 'Bring your product vision to life with our expert team. We develop innovative software products using the latest technologies to meet your requirements.' />
+                    <ServiceSingleCard data = 'flip-left' image = {image1} title = 'Mobile Application (Flutter)' peragraph = 'Develop custom web applications with Laravel clean, expressive code. As a PHP framework, it enables the rapid development of robust web apps.' />
+                    <ServiceSingleCard data = 'flip-left' image = {image2} title = 'Laravel - PHP Application' peragraph = 'Build stunning websites and apps with WordPress, the leading open-source CMS. Its elegant architecture makes it our go-to for crafting customized.' />
+                    <ServiceSingleCard data = 'flip-left' image = {image3} title = 'Product Development' peragraph = 'Bring your product vision to life with our expert team. We develop innovative software products using the latest technologies to meet your requirements.' />
+                    <ServiceSingleCard data = 'flip-left' image = {image4} title = 'WordPress Development' peragraph = 'Bring your product vision to life with our expert team. We develop innovative software products using the latest technologies to meet your requirements.' />
                     <div className="flex items-center justify-center mt-[22px]  ">
                         <div className="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
                             <p className="text-[#fff] text-[15px] font-[500] select-none ">View All Services</p>
@@ -182,10 +186,10 @@ function LandingPage() {
                         </div>
                         <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px] ">We craft a unique solution for every project</h2>
                         <div className="flex items-center flex-wrap mt-[24px] md:mt-[50px] gap-[22px] justify-center ">
-                            <ProjectSingleCard color = '#eae1ca' image = {projectCardImage1} heading = 'N Style' />
-                            <ProjectSingleCard color = '#d0efe5' image = {projectCardImage2} heading = 'Concierge Bookings' />
-                            <ProjectSingleCard color = '#8ec39f' image = {projectCardImage3} heading = 'Endup' paddingLeft = '20px' paddingRight = '20px' />
-                            <ProjectSingleCard color = '#b1d1f3' image = {projectCardImage4} heading = 'OneMove' />
+                            <ProjectSingleCard data = 'flip-left' color = '#eae1ca' image = {projectCardImage1} heading = 'N Style' />
+                            <ProjectSingleCard data = 'flip-right' color = '#d0efe5' image = {projectCardImage2} heading = 'Concierge Bookings' />
+                            <ProjectSingleCard data = 'flip-left' color = '#8ec39f' image = {projectCardImage3} heading = 'Endup' paddingLeft = '20px' paddingRight = '20px' />
+                            <ProjectSingleCard data = 'flip-right' color = '#b1d1f3' image = {projectCardImage4} heading = 'OneMove' />
                         </div>
                         <div className="flex items-center justify-center mt-[52px]  ">
                             <div className="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
@@ -272,9 +276,9 @@ function LandingPage() {
                     <h2 className="text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Achievements and Success Stories</h2>
                     <p className=" text-[14px] sm:text-[15px] text-[#0A0E19] text-center mt-[12px] ">Our projects showcase our dedication to excellence and product delivery, featuring innovative and impactful solutions.</p>
                     <div className="py-[22px] ">
-                        <StoriesSingleCard number = '1' color = '#eae1ca' image = {projectCardImage1} title = 'N Style' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
-                        <StoriesSingleCard number = '2' color = '#d0efe5' image = {projectCardImage2} title = 'Concierge Bookings' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' row_reverse />
-                        <StoriesSingleCard number = '3' lastElement color = '#b1d1f3' image = {projectCardImage4} title = 'OneMove' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <StoriesSingleCard data = 'zoom-in-right' number = '1' color = '#eae1ca' image = {projectCardImage1} title = 'N Style' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
+                        <StoriesSingleCard data = 'zoom-in-left' number = '2' color = '#d0efe5' image = {projectCardImage2} title = 'Concierge Bookings' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' row_reverse />
+                        <StoriesSingleCard data = 'zoom-in-right' number = '3' lastElement color = '#b1d1f3' image = {projectCardImage4} title = 'OneMove' peragrapg = 'Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum h' />
                     </div>
                     <div className="flex items-center justify-center mt-[52px]  ">
                         <div className="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer">
@@ -332,13 +336,13 @@ function LandingPage() {
                             </Swiper>
                         </div>
                     <div className="flex items-center justify-center gap-[22px] mt-[22px] flex-col md:flex-row">
-                        <div className=" flex-1 w-full bg-cover bg-no-repeat bg-center h-[340px] rounded-[20px] " src="" alt="" style={{backgroundImage : `url(${backgroundImage})`}}  ></div>
-                        <div className="flex-1 w-full ">
+                        <div className=" flex-1 w-full bg-cover bg-no-repeat bg-center h-[340px] rounded-[20px] " src="" alt="" data-aos="flip-left" style={{backgroundImage : `url(${backgroundImage})`}}  ></div>
+                        <div className="flex-1 w-full " data-aos="flip-right">
                             <h2 className="text-[22px] text-[#001436] font-[600] ">Data Analytics</h2>
                             <p className="text-[12px] text-[#001436] mt-[6px] line-clamp-4 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
                     </div>
-                    <div className="mt-[70px] rounded-[20px] bg-[#0D99FF] px-[30px] md:px-[50px] py-[32px] md:py-[42px] flex justify-between gap-[18px] md:gap-[22px] items-center sm:flex-row flex-col ">
+                    <div className="mt-[70px] rounded-[20px] bg-[#0D99FF] px-[30px] md:px-[50px] py-[32px] md:py-[42px] flex justify-between gap-[18px] md:gap-[22px] items-center sm:flex-row flex-col " data-aos="fade-up" >
                         <h2 className= "text-[24px] md:text-[35px] text-[#fff] font-[600] sm:text-start text-center line-clamp-2 ">Ready to empower your product vision with us?</h2>
                         <div className="flex items-center gap-[14px] bg-[#FFFFFF] rounded-[7px] px-[22px] py-[12px] cursor-pointer max-w-max">
                             <p className="text-[#0D99FF] text-[15px] font-[500] select-none whitespace-nowrap ">Get Quotes</p>

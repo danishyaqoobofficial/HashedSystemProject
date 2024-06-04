@@ -6,7 +6,7 @@ function StoriesSingleCard(props) {
     return (
         <>
             <div className={`flex items-center justify-center gap-[12px] md:gap-[22px] max-w-[900px] mx-auto flex-col mt-[12px] relative z-10  ${props.row_reverse ? 'md:flex-row-reverse' : 'md:flex-row' }`}  >
-                <div className="mt-[22px]  rounded-[12px] pt-[20px] overflow-hidden max-w-[420px] w-full " style={{backgroundColor : props.color , paddingLeft : props.paddingLeft , paddingRight : props.paddingRight}}  >
+                <div className="mt-[22px]  rounded-[12px] pt-[20px] overflow-hidden max-w-[420px] w-full " data-aos={props.data} style={{backgroundColor : props.color , paddingLeft : props.paddingLeft , paddingRight : props.paddingRight}}  >
                     <img className='h-[240px] sm:h-[255px]' src= {props.image} alt="" />
                 </div>
                 <div className="md:block hidden">

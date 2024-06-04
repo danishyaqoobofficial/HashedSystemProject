@@ -5,7 +5,7 @@
 function ServiceSingleCard(props) {
     return (
         <>
-            <div className="mt-[18px] w-full px-[18px] md:px-[32px] py-[9px] rounded-[20px] border-[0.7px] border-[#CECDD1] flex items-center bg-[#fff] gap-[12px] sm:gap-[18px] md:gap-[28px] overflow-auto sm:flex-row flex-col ">
+            <div className=" mt-[18px] w-full px-[18px] md:px-[32px] py-[9px] rounded-[20px] border-[0.7px] border-[#CECDD1] flex items-center bg-[#fff] gap-[12px] sm:gap-[18px] md:gap-[28px] overflow-auto sm:flex-row flex-col " data-aos={props.data} data-aos-duration="900" >
                 <div className="flex items-center justify-start gap-[18px] md:gap-[28px] flex-1 full_width ">
                     <img className='max-h-[100px] max-w-[90px] ' src={props.image} alt="" />
                     <h3 className='text-start leading-6 text-[18px] flex-1 '>{props.title}</h3>

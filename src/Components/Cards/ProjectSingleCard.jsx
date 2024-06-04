@@ -4,7 +4,7 @@ import TopRightArrow from '../SVGs/TopRightArrow';
 function ProjectSingleCard(props) {
     return (
         <>
-            <div className="max-w-[430px] w-full ">
+            <div className="max-w-[430px] w-full " data-aos={props.data} >
                 <div className="  rounded-[12px] w-full pt-[20px] overflow-hidden " style={{backgroundColor : props.color , paddingLeft : props.paddingLeft , paddingRight : props.paddingRight}}  >
                     <img className='h-[240px] sm:h-[260px] w-full' src= {props.image} alt="" />
                 </div>
