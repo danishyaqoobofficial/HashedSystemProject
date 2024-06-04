@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PK from "../Components/SVGs/PakLocation";
 import UK from "../Components/SVGs/UKLocation";
 import RightArrow from "../Components/SVGs/RightArrow";
@@ -47,14 +48,20 @@ import 'swiper/css/navigation';
 import 'swiper/css';
 // Import required modules
 import { Autoplay , Navigation } from 'swiper/modules';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function LandingPage() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1200,
+        });
+      }, []);
     return (
         <>
             <main className="bg-[#E8F0FA] w-full ">
                 <section className="max-w-[1200px] mx-auto pt-[30px] md:pt-[60px] xl:pt-[80px] flex gap-[18px] md:gap-[22px] px-[15px] md:px-[20px] lg:flex-row flex-col ">
-                    <div className="flex-1 pt-[32px] ">
+                    <div className="flex-1 pt-[32px] " data-aos="fade-down">
                         <h2 className="text-[32px] sm:text-[42px] md:text-[60px] text-[#001436] font-[600] text-start leading-[48px] md:leading-[70px] line-clamp-3 ">Software Development & IT Company</h2>
                         <p className="text-[#0D99FF] text-[24px] sm:text-[28px] md:text-[32px] mt-[14px] font-[600] text-start line-clamp-1 ">in Dubai - Hashed System</p>
                         <p className="text-start text-[#001436] text-[13px] sm:text-[14px] md:text-[16px] mt-[12px] line-clamp-4 ">Hashed System is a leading software development company in Dubai offering custom solutions. We aim to deliver innovative technology products that bring client satisfaction.</p>
@@ -66,22 +73,22 @@ function LandingPage() {
                         </div>
                     </div>
                     <div className="flex-1 flex items-center justify-center">
-                        <img src={img} alt="" />
+                        <img src={img} alt="" data-aos="fade-up" />
                     </div>
                 </section>
             </main>
             <div className="bg-[#1E4470] w-full py-[22px] ">
                 <div className="flex gap-[22px] lg:gap-[30px] justify-center flex-wrap ">
-                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border1 ">
+                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border1" data-aos="slide-right">
                         <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">30+ projects</h2>
                         <p className="text-[11px] md:text-[12px] text-[#FFFFFF] text-center ">successfully delivered</p>
                     </div>
-                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border ">
+                    <div className="px-[42px] py-[8px] border-r border-[#3e5e82] remove_border" data-aos="slide-up">
                         <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">25 Members</h2>
                         <p className="text-[11px] md:text-[12px] text-[#FFFFFF] text-center ">in-house collaborators</p>
                     </div>
-                    <div className="px-[42px] py-[8px]">
-                        <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300] ">Locations</h2>
+                    <div className="px-[42px] py-[8px]" data-aos="slide-left">
+                        <h2 className="text-[28px] md:text-[34px] text-[#fff] text-center font-[300]">Locations</h2>
                         <div className="flex items-center gap-[16px] ">
                             <div className="flex items-center gap-[6px] ">
                                 <span className="flex items-center justify-center h-[22px] w-[22px] ">
@@ -126,7 +133,7 @@ function LandingPage() {
                 <div className="max-w-[1200px] mx-auto px-[15px] md:px-[20px] ">
                     <h2 className=" text-center text-[#0A0E19] font-[600] mt-[20px] leading-[32px] sm:leading-[50px] text-[22px] sm:text-[30px] md:text-[42px]  ">Our Services</h2>
                     <div className="mt-[22px] bg-[#0D99FF] rounded-[20px] p-[30px] flex gap-[42px] items-center flex-col-reverse sm:flex-row ">
-                        <div className="flex-[3] ">
+                        <div className="flex-[3] " data-aos="slide-right">
                             <h2 className="text-[#fff] font-[500] text-[24px] md:text-[28px] text-start ">Django - Python Application</h2>
                             <p className="text-[12px] sm:text-[13px] text-[#FFFFFF] text-start mt-[12px] line-clamp-4 ">Build seamless mobile apps with Flutter. Its layered architecture enables flexible designs and high-speed rendering, allowing us to focus on optimized user experiences. Flutter empowers us to deliver customized front-end and back-end mobile solutions.</p>
                             <div className="rounded-[7px] bg-[#fff] px-[22px] py-[10px] cursor-pointer flex items-center justify-center text-[#0D99FF] font-[600] text-[13px] uppercase max-w-max mt-[22px] ">
