@@ -339,24 +339,24 @@ function AboutUs() {
                         </div>
                     </div>
                     <div className='pt-[30px] '>
-                    <Swiper
-                        spaceBetween={12}
-                        navigation={{
-                            nextEl: '.swiper-button-next-blog1',
-                            prevEl: '.swiper-button-prev-blog1',
-                        }}
-                        autoplay={{
-                            delay: 1900,
-                            disableOnInteraction: false,
+                        <Swiper
+                            spaceBetween={12}
+                            navigation={{
+                                nextEl: '.swiper-button-next-blog1',
+                                prevEl: '.swiper-button-prev-blog1',
                             }}
-                        pagination={true} modules={[Pagination , Autoplay , Navigation ]}
-                        
-                        className="mySwiper !pb-[80px] ">
-                            <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
-                            <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
-                            <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
-                            <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
-                    </Swiper>
+                            autoplay={{
+                                delay: 1900,
+                                disableOnInteraction: false,
+                                }}
+                            pagination={true} modules={[Pagination , Autoplay , Navigation ]}
+                            
+                            className="mySwiper !pb-[80px] ">
+                                <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                                <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                                <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                                <SwiperSlide><ClientTesrimonials bgImage = {BgImage} titleImage = {TitleImage} /></SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
            </div>

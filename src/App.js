@@ -16,6 +16,7 @@ import ServiceDetails from './pages/ServiceDetails';
 import Portfolio from './pages/Portfolio';
 import Blogs from './pages/Blogs';
 import BlogDetails from './pages/BlogDetails';
+import CaseStudies from './pages/CaseStudies';
 
 
 function App() {
@@ -60,6 +61,10 @@ const router = createBrowserRouter(
         {
           path : '/blog-details',
           element : <BlogDetails/>
+        },
+        {
+          path : '/case-studies',
+          element : <CaseStudies/>
         },
         {
           path : '/contact',
