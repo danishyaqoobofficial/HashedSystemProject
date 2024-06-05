@@ -18,6 +18,8 @@ import Blogs from './pages/Blogs';
 import BlogDetails from './pages/BlogDetails';
 import CaseStudies from './pages/CaseStudies';
 import CaseStudiesDetails from './pages/CaseStudiesDetails';
+import TermsAndCondition from './pages/TermsAndCondition';
+import CookiesPolicies from './pages/CookiePolicies';
 
 
 function App() {
@@ -70,6 +72,14 @@ const router = createBrowserRouter(
         {
           path : '/case-studies-details',
           element : <CaseStudiesDetails/>
+        },
+        {
+          path : '/cookies-policies',
+          element : <CookiesPolicies/>
+        },
+        {
+          path : '/terms&condition',
+          element : <TermsAndCondition/>
         },
         {
           path : '/contact',

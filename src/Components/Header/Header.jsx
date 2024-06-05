@@ -24,16 +24,23 @@ import { Autoplay , Navigation } from 'swiper/modules';
 
 
 
+// import { useLocation } from 'react-router-dom';
+
+
 
 import 'swiper/swiper-bundle.css'; // Ensure you have the Swiper CSS
 
 import { Pagination } from 'swiper/modules';
 
 
+// export default App;
+
 function Header() {
 
     const [toggltSideNav, setToggltSideNav] =  useState(false)
     const [headerBar, setHeaderBar] =  useState(false)
+
+    // let location = useLocation();
 
     return (
         <>
@@ -43,7 +50,7 @@ function Header() {
                     <div className="hidden lg:block">
                         <div className="flex items-center gap-[28px] lg:gap-[44px] ">
                             <Link to={`/`}>
-                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo ">
+                                <div className=" capitalize text-[13px] lg:text-[14px] text-[#0D0A31] cursor-pointer font-[500] group Arimo "  >
                                     Home
                                     <div className="rounded-[30px] bg-[#0D99FF] h-[3px] w-[0px] group-hover:w-full transition-all "></div>
                                 </div>

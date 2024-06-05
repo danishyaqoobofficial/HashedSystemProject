@@ -48,7 +48,7 @@ function ServiceDetails() {
         <>
             <div className="w-full bg-[#fff] relative ">
                 <div className="max-w-[1200px] mx-auto px-[15px] md:px-[20px] flex items-start justify-between py-[52px] gap-[32px] sm:gap-[60px] !z-50 sm:flex-row flex-col-reverse ">
-                    <div className="!z-50">
+                    <div className="">
                         <h2 className="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[60px] text-[#001436] font-[600] text-start leading-[43px] sm:leading-[48px] md:leading-[60px] lg:leading-[70px] line-clamp-5 ">Achieve measurable & sustainable business outcomes with Django - Python Application</h2>
                         <p className=" text-[14px] sm:text-[15px] text-[#0A0E19] mt-[16px] ">Leverage data analytics solutions to get actionable insights and make informed decisions to drive your business forward with tangible results.</p>
                         <div className="flex items-center mt-[22px]  ">
@@ -60,7 +60,7 @@ function ServiceDetails() {
                             </div>
                         </div>
                     </div>
-                    <img className="h-[140px] !z-50 " src={python} alt="" />
+                    <img className="h-[140px]" src={python} alt="" />
                 </div>
                 <div className=" absolute !z-0 right-0 top-0 flex items-end flex-col ">
                     <img className="h-[250px] sm:h-[280px] md:h-[320px] lg:h-[360px] " src={position1} alt="" />

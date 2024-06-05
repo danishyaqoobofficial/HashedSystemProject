@@ -21,6 +21,7 @@ import UAE from '../Components/SVGs/UAELocation'
 import Pak from '../Components/SVGs/PakLocation'
 import UK from '../Components/SVGs/UKLocation'
 import RightArrow from '../Components/SVGs/RightArrow'
+import { Link } from 'react-router-dom'
 
 
 
@@ -82,7 +83,7 @@ function ContactUs() {
                             <input id='checkbox' type="checkbox"/>
                             <div className='flex items-center gap-[4px] '>
                                 <label htmlFor='checkbox' className='text-[12px] select-none text-[#000000] font-[300] cursor-default '>I agree to all the</label>
-                                <p className='text-[12px] text-[#000000] font-[300] cursor-pointer border-b border-[#000000] leading-[14px] '>Terms & Conditons</p>
+                                <Link to={'/terms&condition'} className='text-[12px] text-[#000000] font-[300] cursor-pointer border-b border-[#000000] leading-[14px] '>Terms & Conditons</Link>
                             </div>
                         </div>
                         <div className='mt-[22px] '>

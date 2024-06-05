@@ -68,9 +68,9 @@ function CaseStudiesDetails() {
                             </div>
                         </div>
                     </div>
-                    <div className=' mt-[72px] flex justify-between gap-[42px] py-[32px] '>
+                    <div className=' mt-[52px] flex md:items-start md:justify-between gap-[42px] py-[32px] md:flex-row flex-col items-center '>
                         <div className='flex-1 '>
-                            <h2 className=" text-[#0A0E19] font-[600] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Empowering Cashless Shopping Experience With Seamless Payments</h2>
+                            <h2 className=" text-[#0A0E19] font-[600] leading-[39px] md:leading-[58px] text-[22px] sm:text-[30px] md:text-[42px] ">Empowering Cashless Shopping Experience With Seamless Payments</h2>
                             <p className=" text-[15px] text-[#0A0E19] mt-[16px] ">Rise, formerly known as Deall, is a Buy Now Pay Later platform for the Egyptian market that offers customers a credit amount based on initial KYC. With this solution, customers can shop seamlessly across channels, making payments via a virtual card within the app, ensuring a hassle-free experience.</p>
                             <div className='mt-[22px] flex items-center max-w-max border border-[#0D99FF] cursor-pointer rounded-[9px] gap-[9px] px-[14px] py-[11px] '>
                                 <svg width="26" height="26" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,18 +106,18 @@ function CaseStudiesDetails() {
             </div>
             <div className='w-full bg-[#D5E7FB] '>
                 <div className='max-w-[1200px] mx-auto px-[15px] md:px-[20px] py-[62px] '>
-                    <div className='flex items-center justify-between gap-[22px] '>
-                        <div className='flex-1 '>
-                            <h2 className='text-[34px] text-[#001436] font-[600] '>Simplifying Payment Process and Enhancing Customer Engagement</h2>
+                    <div className='flex items-center justify-between gap-[22px] lg:flex-row flex-col '>
+                        <div className='w-full lg:flex-1 '>
+                            <h2 className='text-[22px] md:text-[34px] text-[#001436] font-[600] '>Simplifying Payment Process and Enhancing Customer Engagement</h2>
                             <p className='text-[#0A0E19] text-[13px] font-[300] mt-[7px] '>The current payment landscape can be complex and challenging for both merchants and customers. Rise's innovative buy now, pay later solution seamlessly connects merchants with their customers, enhancing engagement, boosting sales, and ensuring 100% transparency.</p>
                         </div>
-                        <div className='flex-1 flex justify-end '>
+                        <div className='w-full lg:flex-1 flex justify-center lg:justify-end '>
                             <img className=" h-[370px] " src={apple} alt="" />
                         </div>
                     </div>
-                    <div className='flex items-center justify-between gap-[22px] flex-row-reverse mt-[32px]'>
-                        <div className='flex-1 '>
-                            <h2 className='text-[34px] text-[#001436] font-[600] '>Learn more about the product</h2>
+                    <div className='flex items-center justify-between gap-[22px] flex-col lg:flex-row-reverse mt-[62px] lg:mt-[32px]'>
+                        <div className='w-full lg:flex-1 '>
+                            <h2 className='text-[22px] md:text-[34px] text-[#001436] font-[600] '>Learn more about the product</h2>
                             <div className="flex items-center gap-[14px] bg-[#0D99FF] rounded-[7px] px-[22px] py-[12px] cursor-pointer mt-[16px] justify-center max-w-max ">
                                 <p className="text-[#fff] text-[15px] font-[500] select-none ">Consult our Experts</p>
                                 <div className="bg-[#fff] rounded-[50px] p-[6px] ">
@@ -125,17 +125,17 @@ function CaseStudiesDetails() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex-1 flex gap-[10px] justify-start '>
+                        <div className='w-full lg:flex-1 flex gap-[10px] justify-center lg:justify-start flex-wrap '>
                             <img className=" h-[370px] " src={mobile11} alt="" />
                             <img className=" h-[370px] " src={mobile12} alt="" />
                         </div>
                     </div>
-                    <div className='flex items-center justify-between gap-[22px] mt-[32px] '>
-                        <div className='flex-1 '>
-                            <h2 className='text-[34px] text-[#001436] font-[600] '>The Journey of Rise</h2>
+                    <div className='flex items-center justify-between gap-[22px] flex-col lg:flex-row-reverse mt-[62px] lg:mt-[32px] '>
+                        <div className='w-full lg:flex-1 '>
+                            <h2 className='text-[22px] md:text-[34px] text-[#001436] font-[600] '>The Journey of Rise</h2>
                             <p className='text-[#0A0E19] text-[13px] font-[300] mt-[7px] '>Rise was created to simplify the complex and challenging payment process. Our team worked relentlessly to develop a reliable platform prioritizing accessibility, convenience, and transparency. The efforts lead to a positive change in the way people pay online as well as offline.</p>
                         </div>
-                        <div className='flex-1 flex justify-end '>
+                        <div className='w-full lg:flex-1 flex justify-center lg:justify-end '>
                             <img className=" h-[370px] " src={apple} alt="" />
                         </div>
                     </div>
@@ -143,9 +143,9 @@ function CaseStudiesDetails() {
             </div>
             <div className='w-full bg-[#fff] '>
                 <div className='max-w-[1200px] mx-auto px-[15px] md:px-[20px] py-[72px] '>
-                    <div className='flex items-start gap-[22px] '>
-                        <div className='flex-1 '>
-                            <h2 className='text-[34px] text-[#001436] font-[600] '>Key Features</h2>
+                    <div className='flex items-start gap-[22px] lg:flex-row flex-col '>
+                        <div className='w-full lg:flex-1 '>
+                            <h2 className='text-[22px] md:text-[34px] text-[#001436] font-[600] '>Key Features</h2>
                             <p className='text-[#0A0E19] text-[13px] font-[300] mt-[7px] '>Our unique perspective and innovative mindset drive us to create custom strategies that redefine convenience, enabling businesses to offer seamless payment experiences.</p>
                             <div className='flex items-start gap-[22px] mt-[32px] '>
                                 <svg width="70" height="63" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,17 +175,17 @@ function CaseStudiesDetails() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex-1 flex gap-[10px] justify-end '>
+                        <div className='w-full lg:flex-1 flex gap-[10px] justify-center lg:justify-end flex-wrap '>
                             <img className=" h-[370px] " src={mobile11} alt="" />
                             <img className=" h-[370px] " src={mobile15} alt="" />
                         </div>
                     </div>
-                    <div className='flex items-start gap-[22px] mt-[72px] '>
-                        <div className='flex-1 flex gap-[10px] justify-start '>
+                    <div className='flex items-start gap-[22px] mt-[72px] lg:flex-row flex-col-reverse '>
+                        <div className='w-full lg:flex-1 flex gap-[10px] justify-center lg:justify-start flex-wrap'>
                             <img className=" h-[370px] " src={Mobile3} alt="" />
                             <img className=" h-[370px] " src={Mobile4} alt="" />
                         </div>
-                        <div className='flex-1 '>
+                        <div className='w-full lg:flex-1 '>
                             <p className='text-[#0A0E19] text-[13px] font-[300]'>We architect tailored solutions that not only simplify payments but also enhance customer engagement, fostering growth and trust in the constantly evolving financial landscape.</p>
                             <div className='flex items-start gap-[22px] mt-[32px] '>
                                 <svg width="70" height="63" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -229,22 +229,22 @@ function CaseStudiesDetails() {
             </div>
             <div className='w-full bg-[#fff] '>
                 <div className='max-w-[1200px] mx-auto px-[15px] md:px-[20px] py-[62px] '>
-                    <div className='flex items-center justify-between gap-[22px] '>
-                        <div className='flex-1 '>
-                            <h2 className='text-[34px] text-[#001436] font-[600] '>Quick Verification</h2>
+                    <div className='flex items-center justify-between gap-[22px] lg:flex-row flex-col '>
+                        <div className='w-full lg:flex-1 '>
+                            <h2 className='text-[22px] md:text-[34px] text-[#001436] font-[600] '>Quick Verification</h2>
                             <p className='text-[#0A0E19] text-[13px] font-[300] mt-[7px] '>Easily verify your identity on the secure platform by positioning your face in the frame, taking a clear photo, and you’re done!</p>
                         </div>
-                        <div className='flex-1 flex gap-[10px] justify-end '>
+                        <div className='w-full lg:flex-1 flex gap-[10px] justify-center lg:justify-end flex-wrap '>
                             <img className=" h-[370px] " src={Mobile1} alt="" />
                             <img className=" h-[370px] " src={Mobile2} alt="" />
                         </div>
                     </div>
-                    <div className='flex items-center justify-between gap-[22px] flex-row-reverse mt-[32px] '>
-                        <div className='flex-1 '>
-                            <h2 className='text-[34px] text-[#001436] font-[600] '>Easy Return & Refund</h2>
+                    <div className='flex items-center justify-between gap-[22px] flex-col lg:flex-row-reverse mt-[32px] '>
+                        <div className='w-full lg:flex-1 '>
+                            <h2 className='text-[22px] md:text-[34px] text-[#001436] font-[600] '>Easy Return & Refund</h2>
                             <p className='text-[#0A0E19] text-[13px] font-[300] mt-[7px] '>Get a hassle-free return and refund experience with us. If you receive a damaged or incorrect product, simply request a return within the given time period.</p>
                         </div>
-                        <div className='flex-1 flex gap-[10px] justify-start '>
+                        <div className='w-full lg:flex-1 flex gap-[10px] justify-center lg:justify-start flex-wrap'>
                             <img className=" h-[370px] " src={Mobile3} alt="" />
                             <img className=" h-[370px] " src={Mobile4} alt="" />
                         </div>
@@ -253,12 +253,12 @@ function CaseStudiesDetails() {
             </div>
             <div className='w-full bg-[#E8F0FA] '>
                 <div className='max-w-[1200px] mx-auto px-[15px] md:px-[20px] py-[62px] '>
-                    <div className='flex items-start justify-between gap-[22px] flex-wrap '>
-                        <div className='flex-1 '>
-                            <h2 className='text-[34px] text-[#001436] font-[600] '>Advancing Payment Dynamics</h2>
+                    <div className='flex items-start justify-between gap-[22px] lg:flex-row flex-col '>
+                        <div className='w-full lg:flex-1 '>
+                            <h2 className='text-[22px] md:text-[34px] text-[#001436] font-[600] '>Advancing Payment Dynamics</h2>
                             <p className='text-[#0A0E19] text-[13px] font-[300] mt-[7px] '>Steering towards a seamless experience, this venture involves integrating as an online payment method, enhancing profile and credit validation automation, and broadening payment gateway options for enhanced user convenience.</p>
                         </div>
-                        <div className=" flex items-center justify-end gap-[8px] flex-1 ">
+                        <div className=" flex items-center lg:justify-end w-full lg:max-w-max justify-center gap-[8px] mt-[6px] ">
                             <button className="swiper-button-prev-Awards1 flex items-center justify-center h-[42px] w-[46px] cursor-pointer bg-[#fff] rounded-[12px] border border-[#0D99FF] ">
                                 <svg width="18" height="15" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM21 7H1V9H21V7Z" fill="#0D99FF"/>
@@ -315,7 +315,7 @@ function CaseStudiesDetails() {
                         </Swiper>
                     </div>
                     <div className='mt-[52px] '>
-                        <h2 className=" text-[#0A0E19] font-[600] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] ">Revolutionizing Payment Landscape with Innovative Solutions</h2>
+                        <h2 className=" text-[#0A0E19] font-[600] leading-[39px] md:leading-[58px] text-[26px] sm:text-[30px] md:text-[42px] ">Revolutionizing Payment Landscape with Innovative Solutions</h2>
                         <p className=" text-[15px] text-[#0A0E19] mt-[16px] ">Rise's transformative impact on the payment landscape is evident in its ability to simplify transactions and enhance customer engagement. Our solution has redefined the way purchases are made, fostering convenience, transparency, and accessibility.</p>
                         <div className="flex items-start justify-center mt-[42px] gap-[72px] flex-wrap ">
                             <div className="flex items-center justify-center flex-col max-w-[180px] ">
@@ -403,7 +403,7 @@ function CaseStudiesDetails() {
             </div>
             <div className="w-full bg-[#fff] ">
                 <div className="max-w-[1200px] mx-auto py-[50px] px-[12px] md:px-[20px] ">
-                    <h2 className=" text-center text-[#0A0E19] font-[600] leading-[50px] text-[26px] sm:text-[30px] md:text-[42px] max-w-[660px] mx-auto ">Have a project? Let's discuss</h2>
+                    <h2 className=" text-center text-[#0A0E19] font-[600] leading-[39px] md:leading-[58px] text-[26px] sm:text-[30px] md:text-[42px] max-w-[660px] mx-auto ">Have a project? Let's discuss</h2>
                     <p className=" text-[15px] text-[#0A0E19] text-center mt-[16px] ">Once you submit this form, expect to hear back from us within 24 hours.</p>
                     <div className="flex items-center gap-[12px] mt-[36px] flex-col lg:flex-row ">
                         <div className="flex items-center gap-[12px] w-full flex-col sm:flex-row ">
